@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 192" width="580" height="192" role="img" aria-label="IM-Project — Campus Lost And Found web application built for reporting and recovering lost items.">
+  <title>IM-Project</title>
+  <defs>
+    <clipPath id="pclip">
+      <rect width="580" height="192" rx="18"/>
+    </clipPath>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E6EEFA"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="92%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="psheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .pw-slow  { animation: pscroll 22s linear infinite; }
+    .pw-fast  { animation: pscroll-rev 13s linear infinite; }
+    .p-sheen  { animation: psweep 8s ease-in-out 0s infinite; }
+    .p-dot    { animation: pblink 2.4s ease-in-out infinite; }
+
+    @keyframes pscroll {
+      from { transform: translateX(0px); }
+      to   { transform: translateX(-580px); }
+    }
+    @keyframes pscroll-rev {
+      from { transform: translateX(-580px); }
+      to   { transform: translateX(0px); }
+    }
+    @keyframes psweep {
+      0%, 66% { transform: translateX(-640px); }
+      100%    { transform: translateX(680px); }
+    }
+    @keyframes pblink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#pclip)">
+    <rect width="580" height="192" fill="url(#pbg)"/>
+    <rect width="580" height="192" fill="url(#pglow)"/>
+
+    <!-- Parallax micro-horizon ribbons -->
+    <g class="pw-slow">
+      <path d="M0 156.9 L20 158.8 L40 159.6 L60 159.6 L80 158.9 L100 157.9 L120 156.9 L140 156.2 L160 155.9 L180 156.2 L200 156.8 L220 157.6 L240 158.2 L260 158.3 L280 157.6 L300 156 L320 153.6 L340 150.4 L360 146.9 L380 143.5 L400 140.6 L420 138.7 L440 138 L460 138.7 L480 140.6 L500 143.5 L520 147.1 L540 150.8 L560 154.2 L580 156.9 L600 158.8 L620 159.6 L640 159.6 L660 158.9 L680 157.9 L700 156.9 L720 156.2 L740 155.9 L760 156.2 L780 156.8 L800 157.6 L820 158.2 L840 158.3 L860 157.6 L880 156 L900 153.6 L920 150.4 L940 146.9 L960 143.5 L980 140.6 L1000 138.7 L1020 138 L1040 138.7 L1060 140.6 L1080 143.5 L1100 147.1 L1120 150.8 L1140 154.2 L1160 156.9 L1160 192 L0 192 Z" fill="#0284C7" fill-opacity="0.08"/>
+      <path d="M0 156.9 L20 158.8 L40 159.6 L60 159.6 L80 158.9 L100 157.9 L120 156.9 L140 156.2 L160 155.9 L180 156.2 L200 156.8 L220 157.6 L240 158.2 L260 158.3 L280 157.6 L300 156 L320 153.6 L340 150.4 L360 146.9 L380 143.5 L400 140.6 L420 138.7 L440 138 L460 138.7 L480 140.6 L500 143.5 L520 147.1 L540 150.8 L560 154.2 L580 156.9 L600 158.8 L620 159.6 L640 159.6 L660 158.9 L680 157.9 L700 156.9 L720 156.2 L740 155.9 L760 156.2 L780 156.8 L800 157.6 L820 158.2 L840 158.3 L860 157.6 L880 156 L900 153.6 L920 150.4 L940 146.9 L960 143.5 L980 140.6 L1000 138.7 L1020 138 L1040 138.7 L1060 140.6 L1080 143.5 L1100 147.1 L1120 150.8 L1140 154.2 L1160 156.9" fill="none" stroke="#0284C7" stroke-opacity="0.24" stroke-width="1"/>
+    </g>
+    <g class="pw-fast">
+      <path d="M0 167.4 L20 171.7 L40 174.3 L60 174.7 L80 173 L100 170.1 L120 166.8 L140 163.9 L160 162.1 L180 161.4 L200 161.5 L220 161.9 L240 162.5 L260 163.1 L280 164 L300 165.3 L320 167.2 L340 169.6 L360 171.9 L380 173.3 L400 173.2 L420 171.2 L440 167.6 L460 163.2 L480 159.1 L500 156.5 L520 156.3 L540 158.5 L560 162.6 L580 167.4 L600 171.7 L620 174.3 L640 174.7 L660 173 L680 170.1 L700 166.8 L720 163.9 L740 162.1 L760 161.4 L780 161.5 L800 161.9 L820 162.5 L840 163.1 L860 164 L880 165.3 L900 167.2 L920 169.6 L940 171.9 L960 173.3 L980 173.2 L1000 171.2 L1020 167.6 L1040 163.2 L1060 159.1 L1080 156.5 L1100 156.3 L1120 158.5 L1140 162.6 L1160 167.4 L1160 192 L0 192 Z" fill="#0284C7" fill-opacity="0.11"/>
+      <path d="M0 167.4 L20 171.7 L40 174.3 L60 174.7 L80 173 L100 170.1 L120 166.8 L140 163.9 L160 162.1 L180 161.4 L200 161.5 L220 161.9 L240 162.5 L260 163.1 L280 164 L300 165.3 L320 167.2 L340 169.6 L360 171.9 L380 173.3 L400 173.2 L420 171.2 L440 167.6 L460 163.2 L480 159.1 L500 156.5 L520 156.3 L540 158.5 L560 162.6 L580 167.4 L600 171.7 L620 174.3 L640 174.7 L660 173 L680 170.1 L700 166.8 L720 163.9 L740 162.1 L760 161.4 L780 161.5 L800 161.9 L820 162.5 L840 163.1 L860 164 L880 165.3 L900 167.2 L920 169.6 L940 171.9 L960 173.3 L980 173.2 L1000 171.2 L1020 167.6 L1040 163.2 L1060 159.1 L1080 156.5 L1100 156.3 L1120 158.5 L1140 162.6 L1160 167.4" fill="none" stroke="#0284C7" stroke-opacity="0.38" stroke-width="1.2"/>
+    </g>
+
+    <!-- Diagonal glass sheen -->
+    <g transform="skewX(-18)">
+      <rect class="p-sheen" x="0" y="0" width="110" height="192" fill="url(#psheen)"/>
+    </g>
+
+    <!-- Top Specular Line -->
+    <line x1="22" y1="1" x2="558" y2="1" stroke="rgba(255,255,255,0.95)" stroke-width="1.2"/>
+
+    <!-- Index & Status Badge -->
+    <text x="26" y="34" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.8">01 // senatsop/IM-Project</text>
+    <rect x="480" y="17" width="76" height="24" rx="12" fill="rgba(255,255,255,0.86)" stroke="#0284C7" stroke-opacity="0.55"/>
+    <circle class="p-dot" cx="493" cy="29" r="3.2" fill="#0284C7"/>
+    <text x="524" y="33" text-anchor="middle" fill="#0284C7" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="0.8">ACTIVE</text>
+
+    <!-- Title & Description -->
+    <text x="26" y="74" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="-0.4">IM-Project</text>
+    <text x="26" y="102" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14">Campus Lost And Found web application built for</text>
+    <text x="26" y="123" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14">reporting and recovering lost items.</text>
+
+    <!-- Footer Stack & Action Cue -->
+    <text x="26" y="164" fill="#0284C7" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600">JavaScript · Web</text>
+    <text x="554" y="164" text-anchor="end" fill="#0F172A" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" opacity="0.85">OPEN REPO ↗</text>
+
+    <rect x="0.75" y="0.75" width="578.5" height="190.5" rx="17.5" fill="none" stroke="rgba(15,23,42,0.12)" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,506 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="senatsop — Web Developer &amp; Creative Builder">
+  <title>senatsop — Web Developer &amp; Creative Builder</title>
+  <defs>
+    <clipPath id="hero-clip">
+      <rect width="1200" height="430" rx="22"/>
+    </clipPath>
+    <clipPath id="card-clip">
+      <rect width="388" height="292" rx="18"/>
+    </clipPath>
+    <clipPath id="prog-clip">
+      <rect x="24" y="159" width="158.1" height="7" rx="3.5"/>
+    </clipPath>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040712"/>
+      <stop offset="55%" stop-color="#0A1124"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="aurora-1" cx="20%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-2" cx="84%" cy="24%" r="52%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-3" cx="56%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eclipse-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.55"/>
+      <stop offset="32%" stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="52%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#C7D2FE"/>
+    </linearGradient>
+    <linearGradient id="accent-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="55%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="comet-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .layer-stars  { animation: parallax-scroll 72s linear infinite; }
+    .layer-far    { animation: parallax-scroll 44s linear infinite; }
+    .layer-shards { animation: parallax-scroll 34s linear infinite; }
+    .layer-mid    { animation: parallax-scroll 24s linear infinite; }
+    .layer-near   { animation: parallax-scroll 14s linear infinite; }
+    .layer-bokeh  { animation: parallax-scroll 9.5s linear infinite; }
+    .aurora-drift { animation: aurora-breathe 14s ease-in-out infinite alternate; }
+    .eclipse-pulse { animation: eclipse-breathe 9s ease-in-out infinite alternate; }
+    .float-card   { animation: card-float 7.5s ease-in-out infinite; }
+    .orbit-spin   { transform-origin: 0px 0px; animation: spin 16s linear infinite; }
+    .orbit-rev    { transform-origin: 0px 0px; animation: spin-rev 11s linear infinite; }
+    .pulse-dot    { animation: pulse 2.2s ease-in-out infinite; }
+    .eq-bar       { transform-box: fill-box; transform-origin: bottom; animation: eq 2.4s ease-in-out infinite; }
+    .card-sheen   { animation: sheen-sweep 6.5s ease-in-out infinite; }
+    .prog-shimmer { animation: prog-sweep 2.8s linear infinite; }
+    .comet-1      { animation: shoot 11s linear infinite; }
+    .comet-2      { animation: shoot 16s linear 5s infinite; }
+
+    .grid-scan   { animation: grid-depth 5.5s cubic-bezier(0.45, 0.05, 0.85, 0.45) infinite; }
+    .grid-scan-0 { animation-delay: 0s; }
+    .grid-scan-1 { animation-delay: -0.92s; }
+    .grid-scan-2 { animation-delay: -1.84s; }
+    .grid-scan-3 { animation-delay: -2.76s; }
+    .grid-scan-4 { animation-delay: -3.68s; }
+    .grid-scan-5 { animation-delay: -4.60s; }
+
+    @keyframes parallax-scroll {
+      from { transform: translateX(0px); }
+      to   { transform: translateX(-1200px); }
+    }
+    @keyframes aurora-breathe {
+      0%   { transform: translate(0px, 0px) scale(1); opacity: 0.9; }
+      100% { transform: translate(26px, -12px) scale(1.06); opacity: 1; }
+    }
+    @keyframes eclipse-breathe {
+      0%   { opacity: 0.78; transform: translateY(0px); }
+      100% { opacity: 1; transform: translateY(-6px); }
+    }
+    @keyframes card-float {
+      0%, 100% { transform: translate(0px, 0px); }
+      50%      { transform: translate(-4px, -9px); }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes spin-rev {
+      from { transform: rotate(360deg); }
+      to   { transform: rotate(0deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+    @keyframes eq {
+      0%, 100% { transform: scaleY(0.5); }
+      50%      { transform: scaleY(1); }
+    }
+    @keyframes sheen-sweep {
+      0%, 58% { transform: translateX(-440px); }
+      100%    { transform: translateX(480px); }
+    }
+    @keyframes prog-sweep {
+      0%   { transform: translateX(-80px); }
+      100% { transform: translateX(240px); }
+    }
+    @keyframes shoot {
+      0%        { transform: translate(-180px, -60px); opacity: 0; }
+      4%        { opacity: 0.95; }
+      16%       { transform: translate(420px, 140px); opacity: 0; }
+      100%      { transform: translate(420px, 140px); opacity: 0; }
+    }
+    @keyframes grid-depth {
+      0%   { transform: translateY(0px); opacity: 0; }
+      15%  { opacity: 0.72; }
+      100% { transform: translateY(168px); opacity: 0.92; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#hero-clip)">
+    <!-- Layer 0: Deep Canvas & Breathing Aurora -->
+    <rect width="1200" height="430" fill="url(#bg-grad)"/>
+    <g class="aurora-drift">
+      <rect width="1200" height="430" fill="url(#aurora-1)"/>
+      <rect width="1200" height="430" fill="url(#aurora-2)"/>
+      <rect width="1200" height="430" fill="url(#aurora-3)"/>
+    </g>
+
+    <!-- Layer 1: Deep Starfield & Shooting Comets -->
+    <g class="layer-stars">
+      <circle cx="721.3" cy="121.3" r="1.84" fill="#E2E8F0" opacity="0.67"/>
+      <circle cx="1921.3" cy="121.3" r="1.84" fill="#E2E8F0" opacity="0.67"/>
+      <circle cx="209.8" cy="139.7" r="1" fill="#E2E8F0" opacity="0.64"/>
+      <circle cx="1409.8" cy="139.7" r="1" fill="#E2E8F0" opacity="0.64"/>
+      <circle cx="1038.6" cy="127" r="0.96" fill="#E2E8F0" opacity="0.82"/>
+      <circle cx="2238.6" cy="127" r="0.96" fill="#E2E8F0" opacity="0.82"/>
+      <circle cx="894.9" cy="88.1" r="0.89" fill="#E2E8F0" opacity="0.55"/>
+      <circle cx="2094.9" cy="88.1" r="0.89" fill="#E2E8F0" opacity="0.55"/>
+      <circle cx="823.9" cy="159.5" r="0.61" fill="#E2E8F0" opacity="0.53"/>
+      <circle cx="2023.9" cy="159.5" r="0.61" fill="#E2E8F0" opacity="0.53"/>
+      <circle cx="1004.8" cy="28" r="1.46" fill="#E2E8F0" opacity="0.22"/>
+      <circle cx="2204.8" cy="28" r="1.46" fill="#E2E8F0" opacity="0.22"/>
+      <circle cx="320.3" cy="30.5" r="0.87" fill="#E2E8F0" opacity="0.75"/>
+      <circle cx="1520.3" cy="30.5" r="0.87" fill="#E2E8F0" opacity="0.75"/>
+      <circle cx="636.4" cy="22.4" r="0.85" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="1836.4" cy="22.4" r="0.85" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="585.3" cy="206.1" r="1.06" fill="#E2E8F0" opacity="0.51"/>
+      <circle cx="1785.3" cy="206.1" r="1.06" fill="#E2E8F0" opacity="0.51"/>
+      <circle cx="44.9" cy="28.1" r="1.41" fill="#E2E8F0" opacity="0.62"/>
+      <circle cx="1244.9" cy="28.1" r="1.41" fill="#E2E8F0" opacity="0.62"/>
+      <circle cx="294.2" cy="167.7" r="0.9" fill="#E2E8F0" opacity="0.41"/>
+      <circle cx="1494.2" cy="167.7" r="0.9" fill="#E2E8F0" opacity="0.41"/>
+      <circle cx="886.3" cy="217.8" r="1.34" fill="#E2E8F0" opacity="0.34"/>
+      <circle cx="2086.3" cy="217.8" r="1.34" fill="#E2E8F0" opacity="0.34"/>
+      <circle cx="341" cy="84.9" r="0.71" fill="#E2E8F0" opacity="0.66"/>
+      <circle cx="1541.0" cy="84.9" r="0.71" fill="#E2E8F0" opacity="0.66"/>
+      <circle cx="816.9" cy="178.9" r="1.95" fill="#E2E8F0" opacity="0.26"/>
+      <circle cx="2016.9" cy="178.9" r="1.95" fill="#E2E8F0" opacity="0.26"/>
+      <circle cx="1132.5" cy="117.3" r="1.97" fill="#E2E8F0" opacity="0.3"/>
+      <circle cx="2332.5" cy="117.3" r="1.97" fill="#E2E8F0" opacity="0.3"/>
+      <circle cx="133.1" cy="19.7" r="1.12" fill="#E2E8F0" opacity="0.54"/>
+      <circle cx="1333.1" cy="19.7" r="1.12" fill="#E2E8F0" opacity="0.54"/>
+      <circle cx="734.3" cy="227.4" r="0.71" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="1934.3" cy="227.4" r="0.71" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="1121.8" cy="81.4" r="1.62" fill="#E2E8F0" opacity="0.33"/>
+      <circle cx="2321.8" cy="81.4" r="1.62" fill="#E2E8F0" opacity="0.33"/>
+      <circle cx="624.4" cy="209.1" r="0.77" fill="#E2E8F0" opacity="0.9"/>
+      <circle cx="1824.4" cy="209.1" r="0.77" fill="#E2E8F0" opacity="0.9"/>
+      <circle cx="675.4" cy="231.3" r="1.23" fill="#E2E8F0" opacity="0.6"/>
+      <circle cx="1875.4" cy="231.3" r="1.23" fill="#E2E8F0" opacity="0.6"/>
+      <circle cx="404.4" cy="156.1" r="1.07" fill="#E2E8F0" opacity="0.71"/>
+      <circle cx="1604.4" cy="156.1" r="1.07" fill="#E2E8F0" opacity="0.71"/>
+      <circle cx="354.3" cy="121.7" r="1.82" fill="#E2E8F0" opacity="0.69"/>
+      <circle cx="1554.3" cy="121.7" r="1.82" fill="#E2E8F0" opacity="0.69"/>
+      <circle cx="1192.8" cy="225.2" r="1.23" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="2392.8" cy="225.2" r="1.23" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="355.1" cy="39.7" r="1.61" fill="#E2E8F0" opacity="0.42"/>
+      <circle cx="1555.1" cy="39.7" r="1.61" fill="#E2E8F0" opacity="0.42"/>
+      <circle cx="943.1" cy="228.6" r="0.74" fill="#E2E8F0" opacity="0.53"/>
+      <circle cx="2143.1" cy="228.6" r="0.74" fill="#E2E8F0" opacity="0.53"/>
+      <circle cx="986.3" cy="46.5" r="2.01" fill="#E2E8F0" opacity="0.32"/>
+      <circle cx="2186.3" cy="46.5" r="2.01" fill="#E2E8F0" opacity="0.32"/>
+      <circle cx="851.3" cy="180.4" r="0.92" fill="#E2E8F0" opacity="0.49"/>
+      <circle cx="2051.3" cy="180.4" r="0.92" fill="#E2E8F0" opacity="0.49"/>
+      <circle cx="196.1" cy="169.8" r="1.09" fill="#E2E8F0" opacity="0.34"/>
+      <circle cx="1396.1" cy="169.8" r="1.09" fill="#E2E8F0" opacity="0.34"/>
+      <circle cx="754.7" cy="224.4" r="1.07" fill="#E2E8F0" opacity="0.75"/>
+      <circle cx="1954.7" cy="224.4" r="1.07" fill="#E2E8F0" opacity="0.75"/>
+      <circle cx="471.5" cy="46.9" r="1.85" fill="#E2E8F0" opacity="0.46"/>
+      <circle cx="1671.5" cy="46.9" r="1.85" fill="#E2E8F0" opacity="0.46"/>
+      <circle cx="11.4" cy="189.3" r="1.52" fill="#E2E8F0" opacity="0.81"/>
+      <circle cx="1211.4" cy="189.3" r="1.52" fill="#E2E8F0" opacity="0.81"/>
+      <circle cx="1089.8" cy="65.1" r="1.48" fill="#E2E8F0" opacity="0.54"/>
+      <circle cx="2289.8" cy="65.1" r="1.48" fill="#E2E8F0" opacity="0.54"/>
+      <circle cx="220.8" cy="27.2" r="1.62" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="1420.8" cy="27.2" r="1.62" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="349.8" cy="80.7" r="1.09" fill="#E2E8F0" opacity="0.22"/>
+      <circle cx="1549.8" cy="80.7" r="1.09" fill="#E2E8F0" opacity="0.22"/>
+      <circle cx="265.1" cy="249.5" r="1.43" fill="#E2E8F0" opacity="0.89"/>
+      <circle cx="1465.1" cy="249.5" r="1.43" fill="#E2E8F0" opacity="0.89"/>
+      <circle cx="196.6" cy="56.1" r="1.41" fill="#E2E8F0" opacity="0.4"/>
+      <circle cx="1396.6" cy="56.1" r="1.41" fill="#E2E8F0" opacity="0.4"/>
+      <circle cx="473.6" cy="118.1" r="1.21" fill="#E2E8F0" opacity="0.68"/>
+      <circle cx="1673.6" cy="118.1" r="1.21" fill="#E2E8F0" opacity="0.68"/>
+      <circle cx="478.2" cy="95" r="1.9" fill="#E2E8F0" opacity="0.43"/>
+      <circle cx="1678.2" cy="95" r="1.9" fill="#E2E8F0" opacity="0.43"/>
+      <circle cx="594.3" cy="159.6" r="1.39" fill="#E2E8F0" opacity="0.61"/>
+      <circle cx="1794.3" cy="159.6" r="1.39" fill="#E2E8F0" opacity="0.61"/>
+      <circle cx="282.5" cy="92.5" r="1.03" fill="#E2E8F0" opacity="0.42"/>
+      <circle cx="1482.5" cy="92.5" r="1.03" fill="#E2E8F0" opacity="0.42"/>
+      <circle cx="803.2" cy="67.9" r="0.85" fill="#E2E8F0" opacity="0.69"/>
+      <circle cx="2003.2" cy="67.9" r="0.85" fill="#E2E8F0" opacity="0.69"/>
+      <circle cx="377.1" cy="45.4" r="1.06" fill="#E2E8F0" opacity="0.23"/>
+      <circle cx="1577.1" cy="45.4" r="1.06" fill="#E2E8F0" opacity="0.23"/>
+      <circle cx="693" cy="64.8" r="1.3" fill="#E2E8F0" opacity="0.47"/>
+      <circle cx="1893.0" cy="64.8" r="1.3" fill="#E2E8F0" opacity="0.47"/>
+      <circle cx="854.5" cy="230.5" r="1.78" fill="#E2E8F0" opacity="0.51"/>
+      <circle cx="2054.5" cy="230.5" r="1.78" fill="#E2E8F0" opacity="0.51"/>
+      <circle cx="185" cy="219.9" r="1.36" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="1385.0" cy="219.9" r="1.36" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="1073.4" cy="121.8" r="0.81" fill="#E2E8F0" opacity="0.63"/>
+      <circle cx="2273.4" cy="121.8" r="0.81" fill="#E2E8F0" opacity="0.63"/>
+      <circle cx="969.1" cy="65" r="1.16" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="2169.1" cy="65" r="1.16" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="1181.4" cy="131.6" r="1.85" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="2381.4" cy="131.6" r="1.85" fill="#E2E8F0" opacity="0.79"/>
+      <circle cx="892.3" cy="28.6" r="0.7" fill="#E2E8F0" opacity="0.32"/>
+      <circle cx="2092.3" cy="28.6" r="0.7" fill="#E2E8F0" opacity="0.32"/>
+      <circle cx="607.9" cy="175" r="1.7" fill="#E2E8F0" opacity="0.89"/>
+      <circle cx="1807.9" cy="175" r="1.7" fill="#E2E8F0" opacity="0.89"/>
+      <circle cx="979.2" cy="164.4" r="1.81" fill="#E2E8F0" opacity="0.8"/>
+      <circle cx="2179.2" cy="164.4" r="1.81" fill="#E2E8F0" opacity="0.8"/>
+      <circle cx="719.3" cy="98.5" r="1.25" fill="#E2E8F0" opacity="0.81"/>
+      <circle cx="1919.3" cy="98.5" r="1.25" fill="#E2E8F0" opacity="0.81"/>
+      <circle cx="817.2" cy="98.1" r="1.96" fill="#E2E8F0" opacity="0.64"/>
+      <circle cx="2017.2" cy="98.1" r="1.96" fill="#E2E8F0" opacity="0.64"/>
+      <circle cx="395.2" cy="214.5" r="0.82" fill="#E2E8F0" opacity="0.46"/>
+      <circle cx="1595.2" cy="214.5" r="0.82" fill="#E2E8F0" opacity="0.46"/>
+      <circle cx="24" cy="36.1" r="1.54" fill="#E2E8F0" opacity="0.71"/>
+      <circle cx="1224.0" cy="36.1" r="1.54" fill="#E2E8F0" opacity="0.71"/>
+      <circle cx="1147.1" cy="222.7" r="1.28" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="2347.1" cy="222.7" r="1.28" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="174.2" cy="80.2" r="0.8" fill="#E2E8F0" opacity="0.23"/>
+      <circle cx="1374.2" cy="80.2" r="0.8" fill="#E2E8F0" opacity="0.23"/>
+      <circle cx="349.2" cy="119.6" r="1.42" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="1549.2" cy="119.6" r="1.42" fill="#E2E8F0" opacity="0.7"/>
+      <circle cx="952.3" cy="200.4" r="0.88" fill="#E2E8F0" opacity="0.67"/>
+      <circle cx="2152.3" cy="200.4" r="0.88" fill="#E2E8F0" opacity="0.67"/>
+      <circle cx="621.4" cy="120.2" r="1.28" fill="#E2E8F0" opacity="0.52"/>
+      <circle cx="1821.4" cy="120.2" r="1.28" fill="#E2E8F0" opacity="0.52"/>
+      <circle cx="510.1" cy="94" r="1.05" fill="#E2E8F0" opacity="0.3"/>
+      <circle cx="1710.1" cy="94" r="1.05" fill="#E2E8F0" opacity="0.3"/>
+      <circle cx="605.5" cy="78.8" r="1.37" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="1805.5" cy="78.8" r="1.37" fill="#E2E8F0" opacity="0.58"/>
+      <circle cx="776.8" cy="118.7" r="0.8" fill="#E2E8F0" opacity="0.2"/>
+      <circle cx="1976.8" cy="118.7" r="0.8" fill="#E2E8F0" opacity="0.2"/>
+      <circle cx="177.8" cy="237.7" r="0.7" fill="#E2E8F0" opacity="0.81"/>
+      <circle cx="1377.8" cy="237.7" r="0.7" fill="#E2E8F0" opacity="0.81"/>
+    </g>
+    <g transform="translate(320, 48) rotate(18)">
+      <rect class="comet-1" width="110" height="2" rx="1" fill="url(#comet-grad)"/>
+    </g>
+    <g transform="translate(680, 24) rotate(18)">
+      <rect class="comet-2" width="90" height="1.8" rx="1" fill="url(#comet-grad)"/>
+    </g>
+
+    <!-- Luminous Horizon Eclipse Halo (creates strong silhouette depth separation) -->
+    <g class="eclipse-pulse">
+      <circle cx="620" cy="236" r="155" fill="url(#eclipse-glow)"/>
+      <circle cx="620" cy="236" r="54" fill="none" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.2"/>
+    </g>
+
+    <!-- Layer 2: Far Horizon Mountain Ridge -->
+    <g class="layer-far">
+      <path d="M0 274.9 L20 279 L40 281.2 L60 281.5 L80 279.9 L100 276.9 L120 273 L140 268.8 L160 264.8 L180 261.6 L200 259.5 L220 258.5 L240 258.5 L260 259.2 L280 260.2 L300 261.2 L320 261.6 L340 261.4 L360 260.3 L380 258.6 L400 256.4 L420 254.2 L440 252.3 L460 251.2 L480 251 L500 251.8 L520 253.5 L540 255.7 L560 258 L580 259.9 L600 260.7 L620 260.1 L640 257.8 L660 253.8 L680 248.3 L700 241.7 L720 234.6 L740 227.6 L760 221.3 L780 216.2 L800 212.7 L820 210.8 L840 210.5 L860 211.4 L880 213.1 L900 215.3 L920 217.5 L940 219.5 L960 221.1 L980 222.5 L1000 223.8 L1020 225.4 L1040 227.7 L1060 231 L1080 235.5 L1100 241.1 L1120 247.8 L1140 255 L1160 262.4 L1180 269.2 L1200 274.9 L1220 279 L1240 281.2 L1260 281.5 L1280 279.9 L1300 276.9 L1320 273 L1340 268.8 L1360 264.8 L1380 261.6 L1400 259.5 L1420 258.5 L1440 258.5 L1460 259.2 L1480 260.2 L1500 261.2 L1520 261.6 L1540 261.4 L1560 260.3 L1580 258.6 L1600 256.4 L1620 254.2 L1640 252.3 L1660 251.2 L1680 251 L1700 251.8 L1720 253.5 L1740 255.7 L1760 258 L1780 259.9 L1800 260.7 L1820 260.1 L1840 257.8 L1860 253.8 L1880 248.3 L1900 241.7 L1920 234.6 L1940 227.6 L1960 221.3 L1980 216.2 L2000 212.7 L2020 210.8 L2040 210.5 L2060 211.4 L2080 213.1 L2100 215.3 L2120 217.5 L2140 219.5 L2160 221.1 L2180 222.5 L2200 223.8 L2220 225.4 L2240 227.7 L2260 231 L2280 235.5 L2300 241.1 L2320 247.8 L2340 255 L2360 262.4 L2380 269.2 L2400 274.9 L2400 430 L0 430 Z" fill="#101B36" opacity="0.9"/>
+      <path d="M0 274.9 L20 279 L40 281.2 L60 281.5 L80 279.9 L100 276.9 L120 273 L140 268.8 L160 264.8 L180 261.6 L200 259.5 L220 258.5 L240 258.5 L260 259.2 L280 260.2 L300 261.2 L320 261.6 L340 261.4 L360 260.3 L380 258.6 L400 256.4 L420 254.2 L440 252.3 L460 251.2 L480 251 L500 251.8 L520 253.5 L540 255.7 L560 258 L580 259.9 L600 260.7 L620 260.1 L640 257.8 L660 253.8 L680 248.3 L700 241.7 L720 234.6 L740 227.6 L760 221.3 L780 216.2 L800 212.7 L820 210.8 L840 210.5 L860 211.4 L880 213.1 L900 215.3 L920 217.5 L940 219.5 L960 221.1 L980 222.5 L1000 223.8 L1020 225.4 L1040 227.7 L1060 231 L1080 235.5 L1100 241.1 L1120 247.8 L1140 255 L1160 262.4 L1180 269.2 L1200 274.9 L1220 279 L1240 281.2 L1260 281.5 L1280 279.9 L1300 276.9 L1320 273 L1340 268.8 L1360 264.8 L1380 261.6 L1400 259.5 L1420 258.5 L1440 258.5 L1460 259.2 L1480 260.2 L1500 261.2 L1520 261.6 L1540 261.4 L1560 260.3 L1580 258.6 L1600 256.4 L1620 254.2 L1640 252.3 L1660 251.2 L1680 251 L1700 251.8 L1720 253.5 L1740 255.7 L1760 258 L1780 259.9 L1800 260.7 L1820 260.1 L1840 257.8 L1860 253.8 L1880 248.3 L1900 241.7 L1920 234.6 L1940 227.6 L1960 221.3 L1980 216.2 L2000 212.7 L2020 210.8 L2040 210.5 L2060 211.4 L2080 213.1 L2100 215.3 L2120 217.5 L2140 219.5 L2160 221.1 L2180 222.5 L2200 223.8 L2220 225.4 L2240 227.7 L2260 231 L2280 235.5 L2300 241.1 L2320 247.8 L2340 255 L2360 262.4 L2380 269.2 L2400 274.9" fill="none" stroke="rgba(129,140,248,0.32)" stroke-width="1.3"/>
+    </g>
+
+    <!-- Layer 2.5: Midground Floating Parallax Shards -->
+    <g class="layer-shards">
+      <polygon points="190,202 195.6,210 190,218 184.4,210" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="1390,202 1395.6,210 1390,218 1384.4,210" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="470,164 477.7,175 470,186 462.3,175" fill="#818CF8" fill-opacity="0.2" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="1670,164 1677.7,175 1670,186 1662.3,175" fill="#818CF8" fill-opacity="0.2" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="665,119 671.3,128 665,137 658.7,128" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="1865,119 1871.3,128 1865,137 1858.7,128" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="712,225 716.9,232 712,239 707.1,232" fill="#818CF8" fill-opacity="0.2" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="1912,225 1916.9,232 1912,239 1907.1,232" fill="#818CF8" fill-opacity="0.2" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="1040,100 1047,110 1040,120 1033,110" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+      <polygon points="2240,100 2247,110 2240,120 2233,110" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/>
+    </g>
+
+    <!-- Layer 3: Receding 3D Perspective Grid -->
+    <g opacity="0.78">
+      <line x1="0" y1="266" x2="1200" y2="266" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.2"/>
+      <line x1="168" y1="266" x2="-912" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="216" y1="266" x2="-744" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="264" y1="266" x2="-576" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="312" y1="266" x2="-408" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="360" y1="266" x2="-240" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="408" y1="266" x2="-72" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="456" y1="266" x2="96" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="504" y1="266" x2="264" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="552" y1="266" x2="432" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="600" y1="266" x2="600" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="648" y1="266" x2="768" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="696" y1="266" x2="936" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="744" y1="266" x2="1104" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="792" y1="266" x2="1272" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="840" y1="266" x2="1440" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="888" y1="266" x2="1608" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="936" y1="266" x2="1776" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="984" y1="266" x2="1944" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line x1="1032" y1="266" x2="2112" y2="430" stroke="rgba(56,189,248,0.18)" stroke-width="1"/>
+      <line class="grid-scan grid-scan-0" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+      <line class="grid-scan grid-scan-1" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+      <line class="grid-scan grid-scan-2" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+      <line class="grid-scan grid-scan-3" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+      <line class="grid-scan grid-scan-4" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+      <line class="grid-scan grid-scan-5" x1="0" y1="266" x2="1200" y2="266" stroke="rgba(56,189,248,0.18)" stroke-width="1.1"/>
+    </g>
+
+    <!-- Layer 4: Mid Topographic Ridge -->
+    <g class="layer-mid">
+      <path d="M0 319.8 L20 320.1 L40 318.5 L60 315.4 L80 311.5 L100 307.3 L120 303.4 L140 299.8 L160 296.5 L180 293.4 L200 290 L220 286.2 L240 282 L260 277.6 L280 273.7 L300 270.7 L320 269.3 L340 269.8 L360 272.4 L380 276.5 L400 281.4 L420 286.3 L440 290 L460 291.9 L480 291.5 L500 288.9 L520 284.6 L540 279.5 L560 274.4 L580 270.4 L600 268.2 L620 267.9 L640 269.5 L660 272.6 L680 276.5 L700 280.7 L720 284.6 L740 288.2 L760 291.5 L780 294.6 L800 298 L820 301.8 L840 306 L860 310.4 L880 314.3 L900 317.3 L920 318.7 L940 318.2 L960 315.6 L980 311.5 L1000 306.6 L1020 301.7 L1040 298 L1060 296.1 L1080 296.5 L1100 299.1 L1120 303.4 L1140 308.5 L1160 313.6 L1180 317.6 L1200 319.8 L1220 320.1 L1240 318.5 L1260 315.4 L1280 311.5 L1300 307.3 L1320 303.4 L1340 299.8 L1360 296.5 L1380 293.4 L1400 290 L1420 286.2 L1440 282 L1460 277.6 L1480 273.7 L1500 270.7 L1520 269.3 L1540 269.8 L1560 272.4 L1580 276.5 L1600 281.4 L1620 286.3 L1640 290 L1660 291.9 L1680 291.5 L1700 288.9 L1720 284.6 L1740 279.5 L1760 274.4 L1780 270.4 L1800 268.2 L1820 267.9 L1840 269.5 L1860 272.6 L1880 276.5 L1900 280.7 L1920 284.6 L1940 288.2 L1960 291.5 L1980 294.6 L2000 298 L2020 301.8 L2040 306 L2060 310.4 L2080 314.3 L2100 317.3 L2120 318.7 L2140 318.2 L2160 315.6 L2180 311.5 L2200 306.6 L2220 301.7 L2240 298 L2260 296.1 L2280 296.5 L2300 299.1 L2320 303.4 L2340 308.5 L2360 313.6 L2380 317.6 L2400 319.8 L2400 430 L0 430 Z" fill="#0C162E" opacity="0.92"/>
+      <path d="M0 319.8 L20 320.1 L40 318.5 L60 315.4 L80 311.5 L100 307.3 L120 303.4 L140 299.8 L160 296.5 L180 293.4 L200 290 L220 286.2 L240 282 L260 277.6 L280 273.7 L300 270.7 L320 269.3 L340 269.8 L360 272.4 L380 276.5 L400 281.4 L420 286.3 L440 290 L460 291.9 L480 291.5 L500 288.9 L520 284.6 L540 279.5 L560 274.4 L580 270.4 L600 268.2 L620 267.9 L640 269.5 L660 272.6 L680 276.5 L700 280.7 L720 284.6 L740 288.2 L760 291.5 L780 294.6 L800 298 L820 301.8 L840 306 L860 310.4 L880 314.3 L900 317.3 L920 318.7 L940 318.2 L960 315.6 L980 311.5 L1000 306.6 L1020 301.7 L1040 298 L1060 296.1 L1080 296.5 L1100 299.1 L1120 303.4 L1140 308.5 L1160 313.6 L1180 317.6 L1200 319.8 L1220 320.1 L1240 318.5 L1260 315.4 L1280 311.5 L1300 307.3 L1320 303.4 L1340 299.8 L1360 296.5 L1380 293.4 L1400 290 L1420 286.2 L1440 282 L1460 277.6 L1480 273.7 L1500 270.7 L1520 269.3 L1540 269.8 L1560 272.4 L1580 276.5 L1600 281.4 L1620 286.3 L1640 290 L1660 291.9 L1680 291.5 L1700 288.9 L1720 284.6 L1740 279.5 L1760 274.4 L1780 270.4 L1800 268.2 L1820 267.9 L1840 269.5 L1860 272.6 L1880 276.5 L1900 280.7 L1920 284.6 L1940 288.2 L1960 291.5 L1980 294.6 L2000 298 L2020 301.8 L2040 306 L2060 310.4 L2080 314.3 L2100 317.3 L2120 318.7 L2140 318.2 L2160 315.6 L2180 311.5 L2200 306.6 L2220 301.7 L2240 298 L2260 296.1 L2280 296.5 L2300 299.1 L2320 303.4 L2340 308.5 L2360 313.6 L2380 317.6 L2400 319.8" fill="none" stroke="rgba(56,189,248,0.44)" stroke-width="1.6"/>
+    </g>
+
+    <!-- Layer 5: Near Foreground Ridge -->
+    <g class="layer-near">
+      <path d="M0 365.2 L20 366 L40 364.8 L60 361.7 L80 357.1 L100 352.3 L120 348.1 L140 345.7 L160 345.1 L180 346.2 L200 347.9 L220 349.3 L240 349.6 L260 348.4 L280 345.9 L300 342.8 L320 340.1 L340 338.3 L360 337.9 L380 338.5 L400 339.5 L420 340.1 L440 339.8 L460 338.7 L480 337.1 L500 336.1 L520 336.6 L540 339.2 L560 344 L580 350.5 L600 357.5 L620 363.7 L640 368.2 L660 370.3 L680 370.2 L700 368.5 L720 366 L740 363.4 L760 360.9 L780 358.5 L800 355.6 L820 351.6 L840 346.3 L860 339.8 L880 332.8 L900 326.6 L920 322.2 L940 320.6 L960 322.1 L980 326.1 L1000 331.8 L1020 337.8 L1040 343.2 L1060 347.3 L1080 350.2 L1100 352.4 L1120 354.4 L1140 356.9 L1160 359.8 L1180 362.8 L1200 365.2 L1220 366 L1240 364.8 L1260 361.7 L1280 357.1 L1300 352.3 L1320 348.1 L1340 345.7 L1360 345.1 L1380 346.2 L1400 347.9 L1420 349.3 L1440 349.6 L1460 348.4 L1480 345.9 L1500 342.8 L1520 340.1 L1540 338.3 L1560 337.9 L1580 338.5 L1600 339.5 L1620 340.1 L1640 339.8 L1660 338.7 L1680 337.1 L1700 336.1 L1720 336.6 L1740 339.2 L1760 344 L1780 350.5 L1800 357.5 L1820 363.7 L1840 368.2 L1860 370.3 L1880 370.2 L1900 368.5 L1920 366 L1940 363.4 L1960 360.9 L1980 358.5 L2000 355.6 L2020 351.6 L2040 346.3 L2060 339.8 L2080 332.8 L2100 326.6 L2120 322.2 L2140 320.6 L2160 322.1 L2180 326.1 L2200 331.8 L2220 337.8 L2240 343.2 L2260 347.3 L2280 350.2 L2300 352.4 L2320 354.4 L2340 356.9 L2360 359.8 L2380 362.8 L2400 365.2 L2400 430 L0 430 Z" fill="#070E20" opacity="0.96"/>
+      <path d="M0 365.2 L20 366 L40 364.8 L60 361.7 L80 357.1 L100 352.3 L120 348.1 L140 345.7 L160 345.1 L180 346.2 L200 347.9 L220 349.3 L240 349.6 L260 348.4 L280 345.9 L300 342.8 L320 340.1 L340 338.3 L360 337.9 L380 338.5 L400 339.5 L420 340.1 L440 339.8 L460 338.7 L480 337.1 L500 336.1 L520 336.6 L540 339.2 L560 344 L580 350.5 L600 357.5 L620 363.7 L640 368.2 L660 370.3 L680 370.2 L700 368.5 L720 366 L740 363.4 L760 360.9 L780 358.5 L800 355.6 L820 351.6 L840 346.3 L860 339.8 L880 332.8 L900 326.6 L920 322.2 L940 320.6 L960 322.1 L980 326.1 L1000 331.8 L1020 337.8 L1040 343.2 L1060 347.3 L1080 350.2 L1100 352.4 L1120 354.4 L1140 356.9 L1160 359.8 L1180 362.8 L1200 365.2 L1220 366 L1240 364.8 L1260 361.7 L1280 357.1 L1300 352.3 L1320 348.1 L1340 345.7 L1360 345.1 L1380 346.2 L1400 347.9 L1420 349.3 L1440 349.6 L1460 348.4 L1480 345.9 L1500 342.8 L1520 340.1 L1540 338.3 L1560 337.9 L1580 338.5 L1600 339.5 L1620 340.1 L1640 339.8 L1660 338.7 L1680 337.1 L1700 336.1 L1720 336.6 L1740 339.2 L1760 344 L1780 350.5 L1800 357.5 L1820 363.7 L1840 368.2 L1860 370.3 L1880 370.2 L1900 368.5 L1920 366 L1940 363.4 L1960 360.9 L1980 358.5 L2000 355.6 L2020 351.6 L2040 346.3 L2060 339.8 L2080 332.8 L2100 326.6 L2120 322.2 L2140 320.6 L2160 322.1 L2180 326.1 L2200 331.8 L2220 337.8 L2240 343.2 L2260 347.3 L2280 350.2 L2300 352.4 L2320 354.4 L2340 356.9 L2360 359.8 L2380 362.8 L2400 365.2" fill="none" stroke="rgba(45,212,191,0.52)" stroke-width="1.9"/>
+    </g>
+
+    <!-- Layer 6: Foreground Bokeh Depth Particles -->
+    <g class="layer-bokeh">
+      <circle cx="221.3" cy="269.2" r="4.4" fill="#2DD4BF" opacity="0.42"/>
+      <circle cx="1421.3" cy="269.2" r="4.4" fill="#2DD4BF" opacity="0.42"/>
+      <circle cx="516.9" cy="303.6" r="3.4" fill="#818CF8" opacity="0.39"/>
+      <circle cx="1716.9" cy="303.6" r="3.4" fill="#818CF8" opacity="0.39"/>
+      <circle cx="652.8" cy="332.9" r="3.9" fill="#7DD3FC" opacity="0.25"/>
+      <circle cx="1852.8" cy="332.9" r="3.9" fill="#7DD3FC" opacity="0.25"/>
+      <circle cx="546.2" cy="306.1" r="2.2" fill="#2DD4BF" opacity="0.48"/>
+      <circle cx="1746.2" cy="306.1" r="2.2" fill="#2DD4BF" opacity="0.48"/>
+      <circle cx="678.3" cy="402" r="3.8" fill="#7DD3FC" opacity="0.21"/>
+      <circle cx="1878.3" cy="402" r="3.8" fill="#7DD3FC" opacity="0.21"/>
+      <circle cx="239" cy="272.6" r="3.1" fill="#818CF8" opacity="0.29"/>
+      <circle cx="1439.0" cy="272.6" r="3.1" fill="#818CF8" opacity="0.29"/>
+      <circle cx="494.2" cy="366.7" r="4.1" fill="#2DD4BF" opacity="0.25"/>
+      <circle cx="1694.2" cy="366.7" r="4.1" fill="#2DD4BF" opacity="0.25"/>
+      <circle cx="146.9" cy="356.3" r="2.2" fill="#818CF8" opacity="0.46"/>
+      <circle cx="1346.9" cy="356.3" r="2.2" fill="#818CF8" opacity="0.46"/>
+      <circle cx="241.1" cy="379.5" r="1.6" fill="#7DD3FC" opacity="0.39"/>
+      <circle cx="1441.1" cy="379.5" r="1.6" fill="#7DD3FC" opacity="0.39"/>
+      <circle cx="523.2" cy="304.6" r="2.5" fill="#2DD4BF" opacity="0.18"/>
+      <circle cx="1723.2" cy="304.6" r="2.5" fill="#2DD4BF" opacity="0.18"/>
+      <circle cx="171" cy="280.5" r="2.7" fill="#7DD3FC" opacity="0.4"/>
+      <circle cx="1371.0" cy="280.5" r="2.7" fill="#7DD3FC" opacity="0.4"/>
+      <circle cx="351.4" cy="337.8" r="3.1" fill="#818CF8" opacity="0.36"/>
+      <circle cx="1551.4" cy="337.8" r="3.1" fill="#818CF8" opacity="0.36"/>
+      <circle cx="1031.2" cy="407.3" r="4" fill="#2DD4BF" opacity="0.2"/>
+      <circle cx="2231.2" cy="407.3" r="4" fill="#2DD4BF" opacity="0.2"/>
+      <circle cx="191.6" cy="281.7" r="2" fill="#818CF8" opacity="0.23"/>
+      <circle cx="1391.6" cy="281.7" r="2" fill="#818CF8" opacity="0.23"/>
+      <circle cx="311.5" cy="294.2" r="2.3" fill="#7DD3FC" opacity="0.24"/>
+      <circle cx="1511.5" cy="294.2" r="2.3" fill="#7DD3FC" opacity="0.24"/>
+      <circle cx="189.8" cy="367" r="3.4" fill="#2DD4BF" opacity="0.38"/>
+      <circle cx="1389.8" cy="367" r="3.4" fill="#2DD4BF" opacity="0.38"/>
+      <circle cx="718.3" cy="337.7" r="1.7" fill="#7DD3FC" opacity="0.25"/>
+      <circle cx="1918.3" cy="337.7" r="1.7" fill="#7DD3FC" opacity="0.25"/>
+      <circle cx="318.1" cy="385.1" r="2.3" fill="#818CF8" opacity="0.29"/>
+      <circle cx="1518.1" cy="385.1" r="2.3" fill="#818CF8" opacity="0.29"/>
+    </g>
+
+    <!-- HUD Reticle Corners -->
+    <g stroke="rgba(56,189,248,0.45)" stroke-width="1.5" fill="none" opacity="0.8">
+      <path d="M22 36 V22 H36"/>
+      <path d="M1164 22 H1178 V36"/>
+      <path d="M22 394 V408 H36"/>
+      <path d="M1164 408 H1178 V394"/>
+    </g>
+
+    <!-- Foreground Left: Typography Lockup -->
+    <g>
+      <rect x="56" y="50" width="190.4" height="28" rx="14" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.42)"/>
+      <circle class="pulse-dot" cx="74" cy="64" r="4" fill="#2DD4BF"/>
+      <text x="87" y="68" fill="#5EEAD4" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.2">BUILDING &amp; SHIPPING</text>
+
+      <text x="56" y="152" fill="url(#title-grad)" filter="url(#soft-glow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6">senatsop</text>
+      <text x="56" y="192" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16.5" font-weight="600" letter-spacing="0.4">Web Developer &amp; Creative Builder</text>
+
+      <text x="56" y="230" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">Building interactive web apps, browser games, and bots</text>
+      <text x="56" y="255" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">— turning late-night ideas into shipped code.</text>
+
+      <text x="56" y="308" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">@senatsop  ·  he/him · 203+ contributions</text>
+
+      <g transform="translate(56, 338)">
+        <rect width="102" height="28" rx="14" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)"/>
+        <text x="51.0" y="18" text-anchor="middle" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600">JavaScript</text>
+      </g>
+      <g transform="translate(168, 338)">
+        <rect width="72" height="28" rx="14" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)"/>
+        <text x="36.0" y="18" text-anchor="middle" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600">HTML5</text>
+      </g>
+      <g transform="translate(250, 338)">
+        <rect width="72" height="28" rx="14" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)"/>
+        <text x="36.0" y="18" text-anchor="middle" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600">CSS3</text>
+      </g>
+      <g transform="translate(332, 338)">
+        <rect width="86.8" height="28" rx="14" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)"/>
+        <text x="43.4" y="18" text-anchor="middle" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600">Web Apps</text>
+      </g>
+    </g>
+
+    <!-- Foreground Right: Floating Spatial Glass Telemetry Card -->
+    <g transform="translate(756, 62)">
+      <g class="float-card">
+        <rect width="388" height="292" rx="18" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.2"/>
+        <line x1="20" y1="1" x2="368" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1.2"/>
+
+        <g clip-path="url(#card-clip)">
+          <g transform="skewX(-18)">
+            <rect class="card-sheen" x="0" y="0" width="120" height="292" fill="url(#sheen)"/>
+          </g>
+        </g>
+
+        <circle cx="24" cy="24" r="4.5" fill="#38BDF8" opacity="0.9"/>
+        <circle cx="39" cy="24" r="4.5" fill="#818CF8" opacity="0.9"/>
+        <circle cx="54" cy="24" r="4.5" fill="#2DD4BF" opacity="0.9"/>
+        <text x="364" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1">SPATIAL // DEPTH 6X</text>
+        <line x1="16" y1="42" x2="372" y2="42" stroke="rgba(148,163,184,0.24)" stroke-width="1"/>
+
+        <text x="24" y="74" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1">ACTIVE BUILD</text>
+        <text x="24" y="99" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="19" font-weight="700">IM-Project</text>
+        <text x="24" y="120" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">JavaScript · HTML · CSS</text>
+
+        <text x="24" y="150" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.8">SHIP PROGRESS</text>
+        <text x="210" y="150" text-anchor="end" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700">85%</text>
+        <rect x="24" y="159" width="186" height="7" rx="3.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="24" y="159" width="158.1" height="7" rx="3.5" fill="url(#accent-bar)"/>
+        <g clip-path="url(#prog-clip)">
+          <rect class="prog-shimmer" x="24" y="159" width="54" height="7" fill="url(#sheen)"/>
+        </g>
+
+        <text x="24" y="188" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.8">SIGNAL CADENCE</text>
+        <rect class="eq-bar" style="animation-delay:0.00s" x="24" y="218" width="7" height="18" rx="3.5" fill="#2DD4BF" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.14s" x="38" y="204" width="7" height="32" rx="3.5" fill="#818CF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.28s" x="52" y="214" width="7" height="22" rx="3.5" fill="#38BDF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.42s" x="66" y="198" width="7" height="38" rx="3.5" fill="#2DD4BF" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.56s" x="80" y="208" width="7" height="28" rx="3.5" fill="#38BDF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.70s" x="94" y="194" width="7" height="42" rx="3.5" fill="#818CF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.84s" x="108" y="206" width="7" height="30" rx="3.5" fill="#2DD4BF" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:0.98s" x="122" y="200" width="7" height="36" rx="3.5" fill="#818CF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:1.12s" x="136" y="216" width="7" height="20" rx="3.5" fill="#38BDF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:1.26s" x="150" y="196" width="7" height="40" rx="3.5" fill="#2DD4BF" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:1.40s" x="164" y="210" width="7" height="26" rx="3.5" fill="#38BDF8" opacity="0.9"/>
+        <rect class="eq-bar" style="animation-delay:1.54s" x="178" y="202" width="7" height="34" rx="3.5" fill="#818CF8" opacity="0.9"/>
+
+        <g transform="translate(304, 152)">
+          <circle r="56" fill="none" stroke="rgba(148,163,184,0.24)" stroke-width="1" stroke-dasharray="3 4"/>
+          <g class="orbit-spin">
+            <circle r="41" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="50 24" opacity="0.9"/>
+            <circle cx="41" cy="0" r="3.8" fill="#38BDF8"/>
+          </g>
+          <g class="orbit-rev">
+            <circle r="24" fill="none" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="28 18" opacity="0.95"/>
+            <circle cx="-24" cy="0" r="3.2" fill="#2DD4BF"/>
+          </g>
+          <circle r="7.5" fill="url(#accent-bar)"/>
+          <circle class="pulse-dot" r="14" fill="none" stroke="#2DD4BF" stroke-width="1.3"/>
+        </g>
+
+        <line x1="16" y1="254" x2="372" y2="254" stroke="rgba(148,163,184,0.24)" stroke-width="1"/>
+        <text x="24" y="275" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5">$ gh profile --user=senatsop --parallax</text>
+      </g>
+    </g>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="428.5" rx="21.5" fill="none" stroke="rgba(148,163,184,0.22)" stroke-width="1.5"/>
+  </g>
+</svg>

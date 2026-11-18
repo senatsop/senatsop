@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 256" width="1200" height="256" role="img" aria-label="Core Focus, Current Build, and Craft Matrix">
+  <title>Profile Architecture Bento</title>
+  <defs>
+    <clipPath id="bento-clip">
+      <rect width="1200" height="256" rx="18"/>
+    </clipPath>
+    <pattern id="dot-pat" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="rgba(15,23,42,0.12)"/>
+    </pattern>
+    <linearGradient id="bento-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E6EEFA"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="55%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="scan-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0D9488" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bento-orb-1" cx="18%" cy="50%" r="36%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bento-orb-2" cx="82%" cy="50%" r="36%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .bg-dots       { animation: drift-dots 26s linear infinite; }
+    .bento-float-1 { animation: float-a 7s ease-in-out infinite; }
+    .bento-float-2 { animation: float-b 8.5s ease-in-out infinite; }
+    .bento-float-3 { animation: float-a 9.5s ease-in-out infinite; }
+    .pulse         { animation: blink 2.2s ease-in-out infinite; }
+    .cursor-blink  { animation: step-blink 1.1s steps(2, start) infinite; }
+    .top-scanner   { animation: scan-x 6s ease-in-out infinite; }
+
+    @keyframes drift-dots {
+      from { transform: translate(0px, 0px); }
+      to   { transform: translate(-48px, -24px); }
+    }
+    @keyframes float-a {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(-4px); }
+    }
+    @keyframes float-b {
+      0%, 100% { transform: translateY(-3px); }
+      50%      { transform: translateY(3px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.28; }
+    }
+    @keyframes step-blink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+    @keyframes scan-x {
+      0%   { transform: translateX(-260px); }
+      100% { transform: translateX(1280px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#bento-clip)">
+    <rect width="1200" height="256" fill="url(#bento-bg)"/>
+    <rect width="1200" height="256" fill="url(#bento-orb-1)"/>
+    <rect width="1200" height="256" fill="url(#bento-orb-2)"/>
+    <rect class="bg-dots" x="0" y="0" width="1296" height="304" fill="url(#dot-pat)"/>
+    <rect class="top-scanner" x="0" y="0" width="240" height="2" fill="url(#scan-beam)"/>
+
+    <!-- Card 1: Core Focus -->
+    <g transform="translate(20, 24)">
+      <g class="bento-float-1">
+        <rect width="374" height="208" rx="16" fill="rgba(255,255,255,0.86)" stroke="rgba(15,23,42,0.12)" stroke-width="1.2"/>
+        <line x1="18" y1="1" x2="356" y2="1" stroke="rgba(255,255,255,0.95)" stroke-width="1"/>
+        <text x="24" y="34" fill="#0284C7" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.2">01 // CORE FOCUS</text>
+        <circle class="pulse" cx="346" cy="30" r="4" fill="#0284C7"/>
+        <line x1="24" y1="48" x2="350" y2="48" stroke="rgba(15,23,42,0.12)"/>
+        
+        <g transform="translate(24, 76)">
+          <rect y="-11" width="24" height="24" rx="7" fill="rgba(13,148,136,0.10)" stroke="rgba(13,148,136,0.34)"/>
+          <text x="12" y="5" text-anchor="middle" fill="#0F766E" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">1</text>
+          <text x="36" y="5" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Interactive Web Apps &amp; UI</text>
+        </g>
+        <g transform="translate(24, 118)">
+          <rect y="-11" width="24" height="24" rx="7" fill="rgba(13,148,136,0.10)" stroke="rgba(13,148,136,0.34)"/>
+          <text x="12" y="5" text-anchor="middle" fill="#0F766E" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">2</text>
+          <text x="36" y="5" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">JavaScript &amp; Frontend Craft</text>
+        </g>
+        <g transform="translate(24, 160)">
+          <rect y="-11" width="24" height="24" rx="7" fill="rgba(13,148,136,0.10)" stroke="rgba(13,148,136,0.34)"/>
+          <text x="12" y="5" text-anchor="middle" fill="#0F766E" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">3</text>
+          <text x="36" y="5" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Discord Bots &amp; Creative Builds</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Currently Building -->
+    <g transform="translate(413, 24)">
+      <g class="bento-float-2">
+        <rect width="374" height="208" rx="16" fill="rgba(255,255,255,0.86)" stroke="rgba(15,23,42,0.12)" stroke-width="1.2"/>
+        <line x1="18" y1="1" x2="356" y2="1" stroke="rgba(255,255,255,0.95)" stroke-width="1"/>
+        <text x="24" y="34" fill="#0D9488" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.2">02 // IN THE LAB</text>
+        <circle class="pulse" cx="346" cy="30" r="4" fill="#0D9488"/>
+        <line x1="24" y1="48" x2="350" y2="48" stroke="rgba(15,23,42,0.12)"/>
+
+        <text x="24" y="82" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">IM-Project</text>
+        <rect class="cursor-blink" x="144" y="66" width="8" height="18" rx="1.5" fill="#0D9488"/>
+        <text x="24" y="108" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">Campus Lost And Found web</text>
+        <text x="24" y="128" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">application</text>
+        <text x="24" y="156" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">JavaScript · HTML · CSS</text>
+        <rect x="24" y="172" width="326" height="8" rx="4" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="172" width="277.1" height="8" rx="4" fill="url(#bar-grad)"/>
+      </g>
+    </g>
+
+    <!-- Card 3: Signal Telemetry -->
+    <g transform="translate(806, 24)">
+      <g class="bento-float-3">
+        <rect width="374" height="208" rx="16" fill="rgba(255,255,255,0.86)" stroke="rgba(15,23,42,0.12)" stroke-width="1.2"/>
+        <line x1="18" y1="1" x2="356" y2="1" stroke="rgba(255,255,255,0.95)" stroke-width="1"/>
+        <text x="24" y="34" fill="#4F46E5" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.2">03 // CRAFT MATRIX</text>
+        <circle class="pulse" cx="346" cy="30" r="4" fill="#4F46E5"/>
+        <line x1="24" y1="48" x2="350" y2="48" stroke="rgba(15,23,42,0.12)"/>
+        
+        <text x="24" y="78" fill="#475569" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">JAVASCRIPT &amp; WEB</text>
+        <text x="350" y="78" text-anchor="end" fill="#0F172A" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">90%</text>
+        <rect x="24" y="88" width="326" height="8" rx="4" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="88" width="293.4" height="8" rx="4" fill="url(#bar-grad)"/>
+        <text x="24" y="122" fill="#475569" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">HTML &amp; CSS UI</text>
+        <text x="350" y="122" text-anchor="end" fill="#0F172A" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">88%</text>
+        <rect x="24" y="132" width="326" height="8" rx="4" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="132" width="286.9" height="8" rx="4" fill="url(#bar-grad)"/>
+        <text x="24" y="166" fill="#475569" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">BOTS &amp; SIDE PROJECTS</text>
+        <text x="350" y="166" text-anchor="end" fill="#0F172A" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">82%</text>
+        <rect x="24" y="176" width="326" height="8" rx="4" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="176" width="267.3" height="8" rx="4" fill="url(#bar-grad)"/>
+      </g>
+    </g>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="254.5" rx="17.5" fill="none" stroke="rgba(15,23,42,0.12)" stroke-width="1.5"/>
+  </g>
+</svg>

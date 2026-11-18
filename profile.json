@@ -1,0 +1,65 @@
+{
+  "name": "senatsop",
+  "handle": "senatsop",
+  "role": "Web Developer & Creative Builder",
+  "tagline": "Building interactive web apps, browser games, and bots — turning late-night ideas into shipped code.",
+  "status": "BUILDING & SHIPPING",
+  "location": "he/him · 203+ contributions",
+  "currentlyBuilding": {
+    "name": "IM-Project",
+    "summary": "Campus Lost And Found web application",
+    "stack": "JavaScript · HTML · CSS",
+    "progress": 85
+  },
+  "focus": [
+    "Interactive Web Apps & UI",
+    "JavaScript & Frontend Craft",
+    "Discord Bots & Creative Builds"
+  ],
+  "highlights": [
+    { "label": "JAVASCRIPT & WEB", "level": 90 },
+    { "label": "HTML & CSS UI", "level": 88 },
+    { "label": "BOTS & SIDE PROJECTS", "level": 82 }
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/senatsop", "color": "38BDF8" },
+    { "label": "Website", "url": "https://gokgokgok.com", "color": "6366F1" },
+    { "label": "Repositories", "url": "https://github.com/senatsop?tab=repositories", "color": "14B8A6" }
+  ],
+  "projects": [
+    {
+      "name": "IM-Project",
+      "repo": "senatsop/IM-Project",
+      "badge": "ACTIVE",
+      "description": "Campus Lost And Found web application built for reporting and recovering lost items.",
+      "stack": "JavaScript · Web"
+    },
+    {
+      "name": "StarFighting-magig",
+      "repo": "senatsop/StarFighting-magig",
+      "badge": "BOT / GAME",
+      "description": "Interactive project built with an Antigravity IDE Discord bot.",
+      "stack": "HTML · JavaScript"
+    },
+    {
+      "name": "clash-royale",
+      "repo": "senatsop/clash-royale",
+      "badge": "PINNED",
+      "description": "Clash Royale inspired interactive browser project.",
+      "stack": "HTML · CSS · JS"
+    },
+    {
+      "name": "IslandBox",
+      "repo": "balumageorgejr-afk/IslandBox",
+      "badge": "COLLAB",
+      "description": "Collaborative JavaScript project featured on my profile.",
+      "stack": "JavaScript"
+    }
+  ],
+  "techStack": {
+    "Languages": ["JavaScript", "HTML5", "CSS3"],
+    "Focus": ["Web Apps", "Browser Games", "Discord Bots", "SVG Motion"],
+    "Tooling": ["Git", "GitHub", "Antigravity IDE"]
+  },
+  "footerNote": "lowkey, I like her :(  ·  building cool things on the web"
+}

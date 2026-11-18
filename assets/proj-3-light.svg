@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 192" width="580" height="192" role="img" aria-label="clash-royale — Clash Royale inspired interactive browser project.">
+  <title>clash-royale</title>
+  <defs>
+    <clipPath id="pclip">
+      <rect width="580" height="192" rx="18"/>
+    </clipPath>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E6EEFA"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="92%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="psheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .pw-slow  { animation: pscroll 22s linear infinite; }
+    .pw-fast  { animation: pscroll-rev 13s linear infinite; }
+    .p-sheen  { animation: psweep 8s ease-in-out 2.8s infinite; }
+    .p-dot    { animation: pblink 2.4s ease-in-out infinite; }
+
+    @keyframes pscroll {
+      from { transform: translateX(0px); }
+      to   { transform: translateX(-580px); }
+    }
+    @keyframes pscroll-rev {
+      from { transform: translateX(-580px); }
+      to   { transform: translateX(0px); }
+    }
+    @keyframes psweep {
+      0%, 66% { transform: translateX(-640px); }
+      100%    { transform: translateX(680px); }
+    }
+    @keyframes pblink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#pclip)">
+    <rect width="580" height="192" fill="url(#pbg)"/>
+    <rect width="580" height="192" fill="url(#pglow)"/>
+
+    <!-- Parallax micro-horizon ribbons -->
+    <g class="pw-slow">
+      <path d="M0 165.7 L20 164.9 L40 162.9 L60 159.9 L80 156.2 L100 152.2 L120 148.6 L140 145.6 L160 143.6 L180 142.7 L200 142.8 L220 143.6 L240 145 L260 146.4 L280 147.7 L300 148.5 L320 148.8 L340 148.6 L360 148.2 L380 147.7 L400 147.7 L420 148.2 L440 149.5 L460 151.7 L480 154.4 L500 157.6 L520 160.7 L540 163.4 L560 165.1 L580 165.7 L600 164.9 L620 162.9 L640 159.9 L660 156.2 L680 152.2 L700 148.6 L720 145.6 L740 143.6 L760 142.7 L780 142.8 L800 143.6 L820 145 L840 146.4 L860 147.7 L880 148.5 L900 148.8 L920 148.6 L940 148.2 L960 147.7 L980 147.7 L1000 148.2 L1020 149.5 L1040 151.7 L1060 154.4 L1080 157.6 L1100 160.7 L1120 163.4 L1140 165.1 L1160 165.7 L1160 192 L0 192 Z" fill="#4F46E5" fill-opacity="0.08"/>
+      <path d="M0 165.7 L20 164.9 L40 162.9 L60 159.9 L80 156.2 L100 152.2 L120 148.6 L140 145.6 L160 143.6 L180 142.7 L200 142.8 L220 143.6 L240 145 L260 146.4 L280 147.7 L300 148.5 L320 148.8 L340 148.6 L360 148.2 L380 147.7 L400 147.7 L420 148.2 L440 149.5 L460 151.7 L480 154.4 L500 157.6 L520 160.7 L540 163.4 L560 165.1 L580 165.7 L600 164.9 L620 162.9 L640 159.9 L660 156.2 L680 152.2 L700 148.6 L720 145.6 L740 143.6 L760 142.7 L780 142.8 L800 143.6 L820 145 L840 146.4 L860 147.7 L880 148.5 L900 148.8 L920 148.6 L940 148.2 L960 147.7 L980 147.7 L1000 148.2 L1020 149.5 L1040 151.7 L1060 154.4 L1080 157.6 L1100 160.7 L1120 163.4 L1140 165.1 L1160 165.7" fill="none" stroke="#4F46E5" stroke-opacity="0.24" stroke-width="1"/>
+    </g>
+    <g class="pw-fast">
+      <path d="M0 171 L20 169.5 L40 166.7 L60 163.1 L80 159.6 L100 157.3 L120 157 L140 158.9 L160 162.8 L180 167.7 L200 172.2 L220 175.1 L240 175.7 L260 173.9 L280 170.3 L300 166 L320 162.3 L340 159.8 L360 159.1 L380 159.9 L400 161.7 L420 163.7 L440 165.4 L460 166.8 L480 167.8 L500 168.7 L520 169.8 L540 170.8 L560 171.3 L580 171 L600 169.5 L620 166.7 L640 163.1 L660 159.6 L680 157.3 L700 157 L720 158.9 L740 162.8 L760 167.7 L780 172.2 L800 175.1 L820 175.7 L840 173.9 L860 170.3 L880 166 L900 162.3 L920 159.8 L940 159.1 L960 159.9 L980 161.7 L1000 163.7 L1020 165.4 L1040 166.8 L1060 167.8 L1080 168.7 L1100 169.8 L1120 170.8 L1140 171.3 L1160 171 L1160 192 L0 192 Z" fill="#4F46E5" fill-opacity="0.11"/>
+      <path d="M0 171 L20 169.5 L40 166.7 L60 163.1 L80 159.6 L100 157.3 L120 157 L140 158.9 L160 162.8 L180 167.7 L200 172.2 L220 175.1 L240 175.7 L260 173.9 L280 170.3 L300 166 L320 162.3 L340 159.8 L360 159.1 L380 159.9 L400 161.7 L420 163.7 L440 165.4 L460 166.8 L480 167.8 L500 168.7 L520 169.8 L540 170.8 L560 171.3 L580 171 L600 169.5 L620 166.7 L640 163.1 L660 159.6 L680 157.3 L700 157 L720 158.9 L740 162.8 L760 167.7 L780 172.2 L800 175.1 L820 175.7 L840 173.9 L860 170.3 L880 166 L900 162.3 L920 159.8 L940 159.1 L960 159.9 L980 161.7 L1000 163.7 L1020 165.4 L1040 166.8 L1060 167.8 L1080 168.7 L1100 169.8 L1120 170.8 L1140 171.3 L1160 171" fill="none" stroke="#4F46E5" stroke-opacity="0.38" stroke-width="1.2"/>
+    </g>
+
+    <!-- Diagonal glass sheen -->
+    <g transform="skewX(-18)">
+      <rect class="p-sheen" x="0" y="0" width="110" height="192" fill="url(#psheen)"/>
+    </g>
+
+    <!-- Top Specular Line -->
+    <line x1="22" y1="1" x2="558" y2="1" stroke="rgba(255,255,255,0.95)" stroke-width="1.2"/>
+
+    <!-- Index & Status Badge -->
+    <text x="26" y="34" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.8">03 // senatsop/clash-royale</text>
+    <rect x="480" y="17" width="76" height="24" rx="12" fill="rgba(255,255,255,0.86)" stroke="#4F46E5" stroke-opacity="0.55"/>
+    <circle class="p-dot" cx="493" cy="29" r="3.2" fill="#4F46E5"/>
+    <text x="524" y="33" text-anchor="middle" fill="#4F46E5" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="0.8">PINNED</text>
+
+    <!-- Title & Description -->
+    <text x="26" y="74" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="-0.4">clash-royale</text>
+    <text x="26" y="102" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14">Clash Royale inspired interactive browser project.</text>
+
+    <!-- Footer Stack & Action Cue -->
+    <text x="26" y="164" fill="#4F46E5" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600">HTML · CSS · JS</text>
+    <text x="554" y="164" text-anchor="end" fill="#0F172A" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" opacity="0.85">OPEN REPO ↗</text>
+
+    <rect x="0.75" y="0.75" width="578.5" height="190.5" rx="17.5" fill="none" stroke="rgba(15,23,42,0.12)" stroke-width="1.5"/>
+  </g>
+</svg>
