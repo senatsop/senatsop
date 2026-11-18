@@ -30,8 +30,8 @@
   ],
   "focus": [
     "Pure Vibecoding With No Skills",
-    "Smart Web & Transit Platforms",
-    "Antigravity IDE × Discord Bots"
+    "Claude & Codex AI Pairing",
+    "Smart Web & Transit Platforms"
   ],
   "highlights": [
     { "label": "VIBECODING", "level": 100 },
@@ -90,8 +90,8 @@
   ],
   "techStack": {
     "Languages": ["TypeScript", "JavaScript", "HTML5", "CSS3"],
-    "Focus": ["Vibecoder with no skills", "Web Apps", "Discord Bots", "SVG Motion"],
-    "Tooling": ["Git", "GitHub", "Antigravity IDE"]
+    "AI & Tooling": ["Claude", "Codex", "Antigravity IDE", "Git", "GitHub"],
+    "Focus": ["Vibecoder with no skills", "Web Apps", "Discord Bots", "SVG Motion"]
   },
   "footerNote": "lowkey, I like her :(  ·  vibecoder with no skills"
 }

@@ -84,13 +84,15 @@
   <img src="https://img.shields.io/badge/JavaScript-0B1226?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
   <img src="https://img.shields.io/badge/HTML5-0B1226?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-0B1226?style=for-the-badge&logo=css&logoColor=1572B6" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Claude-0B1226?style=for-the-badge&logo=claude&logoColor=D97706" alt="Claude" />
+  <img src="https://img.shields.io/badge/Codex-0B1226?style=for-the-badge&logo=githubcopilot&logoColor=38BDF8" alt="Codex" />
+  <img src="https://img.shields.io/badge/Antigravity_IDE-0B1226?style=for-the-badge&logo=googlegemini&logoColor=38BDF8" alt="Antigravity IDE" />
+  <img src="https://img.shields.io/badge/Git-0B1226?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-0B1226?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" />
   <img src="https://img.shields.io/badge/Vibecoder_with_no_skills-0B1226?style=for-the-badge&logo=googlegemini&logoColor=2DD4BF" alt="Vibecoder with no skills" />
   <img src="https://img.shields.io/badge/Web_Apps-0B1226?style=for-the-badge&logo=googlechrome&logoColor=38BDF8" alt="Web Apps" />
   <img src="https://img.shields.io/badge/Discord_Bots-0B1226?style=for-the-badge&logo=discord&logoColor=5865F2" alt="Discord Bots" />
   <img src="https://img.shields.io/badge/SVG_Motion-0B1226?style=for-the-badge&logo=svg&logoColor=818CF8" alt="SVG Motion" />
-  <img src="https://img.shields.io/badge/Git-0B1226?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-0B1226?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Antigravity_IDE-0B1226?style=for-the-badge&logo=googlegemini&logoColor=38BDF8" alt="Antigravity IDE" />
 </p>
 
 <br />

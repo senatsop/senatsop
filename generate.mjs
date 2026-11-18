@@ -101,6 +101,8 @@ const STACK_LOGOS = {
   JavaScript: { logo: 'javascript', color: 'F7DF1E' },
   HTML5: { logo: 'html5', color: 'E34F26' },
   'Vibecoder with no skills': { logo: 'googlegemini', color: '2DD4BF' },
+  Claude: { logo: 'claude', color: 'D97706' },
+  Codex: { logo: 'githubcopilot', color: '38BDF8' },
   CSS3: { logo: 'css', color: '1572B6' },
   TypeScript: { logo: 'typescript', color: '3178C6' },
   'Node.js': { logo: 'nodedotjs', color: '339933' },
