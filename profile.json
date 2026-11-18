@@ -1,25 +1,25 @@
 {
   "name": "senatsop",
   "handle": "senatsop",
-  "role": "Web Developer & Creative Builder",
-  "tagline": "Building interactive web apps, browser games, and bots — turning late-night ideas into shipped code.",
-  "status": "BUILDING & SHIPPING",
+  "role": "Vibecoder With No Skills",
+  "tagline": "Vibecoder with no skills — turning prompts, chaos, and late-night ideas into shipped apps & bots.",
+  "status": "VIBECODING · NO SKILLS",
   "location": "he/him · 203+ contributions",
   "currentlyBuilding": {
-    "name": "IM-Project",
-    "summary": "Campus Lost And Found web application",
-    "stack": "JavaScript · HTML · CSS",
-    "progress": 85
+    "name": "loadwise",
+    "summary": "Constraint-based academic scheduling & OCR load studio",
+    "stack": "TypeScript · OCR · Scheduling",
+    "progress": 88
   },
   "focus": [
-    "Interactive Web Apps & UI",
-    "JavaScript & Frontend Craft",
-    "Discord Bots & Creative Builds"
+    "Pure Vibecoding With No Skills",
+    "Smart Web & Transit Platforms",
+    "Antigravity IDE × Discord Bots"
   ],
   "highlights": [
-    { "label": "JAVASCRIPT & WEB", "level": 90 },
-    { "label": "HTML & CSS UI", "level": 88 },
-    { "label": "BOTS & SIDE PROJECTS", "level": 82 }
+    { "label": "VIBECODING", "level": 100 },
+    { "label": "SHIPPING ANYWAY", "level": 96 },
+    { "label": "ACTUAL SKILLS", "level": 0 }
   ],
   "links": [
     { "label": "GitHub", "url": "https://github.com/senatsop", "color": "38BDF8" },
@@ -28,38 +28,38 @@
   ],
   "projects": [
     {
+      "name": "sakay",
+      "repo": "senatsop/sakay",
+      "badge": "SAKAY360",
+      "description": "Bohol Province-wide intelligent public transportation info and journey planning platform.",
+      "stack": "TypeScript · Transit · Maps"
+    },
+    {
+      "name": "antigravity-discord-controller",
+      "repo": "senatsop/antigravity-discord-controller",
+      "badge": "DISCORD BOT",
+      "description": "Antigravity IDE × Discord remote control and live notification system.",
+      "stack": "JavaScript · Discord Bot · Automation"
+    },
+    {
+      "name": "loadwise",
+      "repo": "senatsop/loadwise",
+      "badge": "AI / OCR",
+      "description": "Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio.",
+      "stack": "TypeScript · OCR · Scheduling"
+    },
+    {
       "name": "IM-Project",
       "repo": "senatsop/IM-Project",
-      "badge": "ACTIVE",
-      "description": "Campus Lost And Found web application built for reporting and recovering lost items.",
-      "stack": "JavaScript · Web"
-    },
-    {
-      "name": "StarFighting-magig",
-      "repo": "senatsop/StarFighting-magig",
-      "badge": "BOT / GAME",
-      "description": "Interactive project built with an Antigravity IDE Discord bot.",
-      "stack": "HTML · JavaScript"
-    },
-    {
-      "name": "clash-royale",
-      "repo": "senatsop/clash-royale",
-      "badge": "PINNED",
-      "description": "Clash Royale inspired interactive browser project.",
-      "stack": "HTML · CSS · JS"
-    },
-    {
-      "name": "IslandBox",
-      "repo": "balumageorgejr-afk/IslandBox",
-      "badge": "COLLAB",
-      "description": "Collaborative JavaScript project featured on my profile.",
-      "stack": "JavaScript"
+      "badge": "PUBLIC",
+      "description": "Campus Lost And Found web application for reporting and recovering lost items.",
+      "stack": "JavaScript · Web App"
     }
   ],
   "techStack": {
-    "Languages": ["JavaScript", "HTML5", "CSS3"],
-    "Focus": ["Web Apps", "Browser Games", "Discord Bots", "SVG Motion"],
+    "Languages": ["TypeScript", "JavaScript", "HTML5", "CSS3"],
+    "Focus": ["Vibecoder with no skills", "Web Apps", "Discord Bots", "SVG Motion"],
     "Tooling": ["Git", "GitHub", "Antigravity IDE"]
   },
-  "footerNote": "lowkey, I like her :(  ·  building cool things on the web"
+  "footerNote": "lowkey, I like her :(  ·  vibecoder with no skills"
 }

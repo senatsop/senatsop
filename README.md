@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
-  <img alt="senatsop — Web Developer &amp; Creative Builder" src="./assets/hero-dark.svg" width="100%" />
+  <img alt="senatsop — Vibecoder With No Skills" src="./assets/hero-dark.svg" width="100%" />
 </picture>
 
 <br />
@@ -27,29 +27,29 @@
 <h3>Featured Builds</h3>
 
 <p align="center">
-  <a href="https://github.com/senatsop/IM-Project"><picture>
+  <a href="https://github.com/senatsop/sakay"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-1-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-1-light.svg" />
-  <img alt="IM-Project — Campus Lost And Found web application built for reporting and recovering lost items." src="./assets/proj-1-dark.svg" width="48.8%" />
+  <img alt="sakay — Bohol Province-wide intelligent public transportation info and journey planning platform." src="./assets/proj-1-dark.svg" width="48.8%" />
 </picture></a>
   &nbsp;
-  <a href="https://github.com/senatsop/StarFighting-magig"><picture>
+  <a href="https://github.com/senatsop/antigravity-discord-controller"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-2-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-2-light.svg" />
-  <img alt="StarFighting-magig — Interactive project built with an Antigravity IDE Discord bot." src="./assets/proj-2-dark.svg" width="48.8%" />
+  <img alt="antigravity-discord-controller — Antigravity IDE × Discord remote control and live notification system." src="./assets/proj-2-dark.svg" width="48.8%" />
 </picture></a>
 </p>
 <p align="center">
-  <a href="https://github.com/senatsop/clash-royale"><picture>
+  <a href="https://github.com/senatsop/loadwise"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-3-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-3-light.svg" />
-  <img alt="clash-royale — Clash Royale inspired interactive browser project." src="./assets/proj-3-dark.svg" width="48.8%" />
+  <img alt="loadwise — Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio." src="./assets/proj-3-dark.svg" width="48.8%" />
 </picture></a>
   &nbsp;
-  <a href="https://github.com/balumageorgejr-afk/IslandBox"><picture>
+  <a href="https://github.com/senatsop/IM-Project"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-4-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-4-light.svg" />
-  <img alt="IslandBox — Collaborative JavaScript project featured on my profile." src="./assets/proj-4-dark.svg" width="48.8%" />
+  <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-4-dark.svg" width="48.8%" />
 </picture></a>
 </p>
 
@@ -58,11 +58,12 @@
 <h3>Tech Stack &amp; Arsenal</h3>
 
 <p>
+  <img src="https://img.shields.io/badge/TypeScript-0B1226?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-0B1226?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
   <img src="https://img.shields.io/badge/HTML5-0B1226?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-0B1226?style=for-the-badge&logo=css&logoColor=1572B6" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Vibecoder_with_no_skills-0B1226?style=for-the-badge&logo=googlegemini&logoColor=2DD4BF" alt="Vibecoder with no skills" />
   <img src="https://img.shields.io/badge/Web_Apps-0B1226?style=for-the-badge&logo=googlechrome&logoColor=38BDF8" alt="Web Apps" />
-  <img src="https://img.shields.io/badge/Browser_Games-0B1226?style=for-the-badge&logo=webgl&logoColor=2DD4BF" alt="Browser Games" />
   <img src="https://img.shields.io/badge/Discord_Bots-0B1226?style=for-the-badge&logo=discord&logoColor=5865F2" alt="Discord Bots" />
   <img src="https://img.shields.io/badge/SVG_Motion-0B1226?style=for-the-badge&logo=svg&logoColor=818CF8" alt="SVG Motion" />
   <img src="https://img.shields.io/badge/Git-0B1226?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
@@ -84,7 +85,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
-  <img alt="lowkey, I like her :(  ·  building cool things on the web" src="./assets/footer-dark.svg" width="100%" />
+  <img alt="lowkey, I like her :(  ·  vibecoder with no skills" src="./assets/footer-dark.svg" width="100%" />
 </picture>
 
 </div>

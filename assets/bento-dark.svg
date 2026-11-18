@@ -88,17 +88,17 @@
         <g transform="translate(24, 76)">
           <rect y="-11" width="24" height="24" rx="7" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.42)"/>
           <text x="12" y="5" text-anchor="middle" fill="#5EEAD4" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">1</text>
-          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Interactive Web Apps &amp; UI</text>
+          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Pure Vibecoding With No Skills</text>
         </g>
         <g transform="translate(24, 118)">
           <rect y="-11" width="24" height="24" rx="7" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.42)"/>
           <text x="12" y="5" text-anchor="middle" fill="#5EEAD4" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">2</text>
-          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">JavaScript &amp; Frontend Craft</text>
+          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Smart Web &amp; Transit Platforms</text>
         </g>
         <g transform="translate(24, 160)">
           <rect y="-11" width="24" height="24" rx="7" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.42)"/>
           <text x="12" y="5" text-anchor="middle" fill="#5EEAD4" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">3</text>
-          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Discord Bots &amp; Creative Builds</text>
+          <text x="36" y="5" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="14" font-weight="500">Antigravity IDE × Discord Bots</text>
         </g>
       </g>
     </g>
@@ -112,13 +112,13 @@
         <circle class="pulse" cx="346" cy="30" r="4" fill="#2DD4BF"/>
         <line x1="24" y1="48" x2="350" y2="48" stroke="rgba(148,163,184,0.24)"/>
 
-        <text x="24" y="82" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">IM-Project</text>
-        <rect class="cursor-blink" x="144" y="66" width="8" height="18" rx="1.5" fill="#2DD4BF"/>
-        <text x="24" y="108" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">Campus Lost And Found web</text>
-        <text x="24" y="128" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">application</text>
-        <text x="24" y="156" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">JavaScript · HTML · CSS</text>
+        <text x="24" y="82" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">loadwise</text>
+        <rect class="cursor-blink" x="121.2" y="66" width="8" height="18" rx="1.5" fill="#2DD4BF"/>
+        <text x="24" y="108" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">Constraint-based academic scheduling</text>
+        <text x="24" y="128" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13.5">&amp; OCR load studio</text>
+        <text x="24" y="156" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">TypeScript · OCR · Scheduling</text>
         <rect x="24" y="172" width="326" height="8" rx="4" fill="rgba(148,163,184,0.18)"/>
-        <rect x="24" y="172" width="277.1" height="8" rx="4" fill="url(#bar-grad)"/>
+        <rect x="24" y="172" width="286.9" height="8" rx="4" fill="url(#bar-grad)"/>
       </g>
     </g>
 
@@ -131,18 +131,18 @@
         <circle class="pulse" cx="346" cy="30" r="4" fill="#818CF8"/>
         <line x1="24" y1="48" x2="350" y2="48" stroke="rgba(148,163,184,0.24)"/>
         
-        <text x="24" y="78" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">JAVASCRIPT &amp; WEB</text>
-        <text x="350" y="78" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">90%</text>
+        <text x="24" y="78" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">VIBECODING</text>
+        <text x="350" y="78" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">100%</text>
         <rect x="24" y="88" width="326" height="8" rx="4" fill="rgba(148,163,184,0.18)"/>
-        <rect x="24" y="88" width="293.4" height="8" rx="4" fill="url(#bar-grad)"/>
-        <text x="24" y="122" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">HTML &amp; CSS UI</text>
-        <text x="350" y="122" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">88%</text>
+        <rect x="24" y="88" width="326" height="8" rx="4" fill="url(#bar-grad)"/>
+        <text x="24" y="122" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">SHIPPING ANYWAY</text>
+        <text x="350" y="122" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">96%</text>
         <rect x="24" y="132" width="326" height="8" rx="4" fill="rgba(148,163,184,0.18)"/>
-        <rect x="24" y="132" width="286.9" height="8" rx="4" fill="url(#bar-grad)"/>
-        <text x="24" y="166" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">BOTS &amp; SIDE PROJECTS</text>
-        <text x="350" y="166" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">82%</text>
+        <rect x="24" y="132" width="313" height="8" rx="4" fill="url(#bar-grad)"/>
+        <text x="24" y="166" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" letter-spacing="0.6">ACTUAL SKILLS</text>
+        <text x="350" y="166" text-anchor="end" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700">0%</text>
         <rect x="24" y="176" width="326" height="8" rx="4" fill="rgba(148,163,184,0.18)"/>
-        <rect x="24" y="176" width="267.3" height="8" rx="4" fill="url(#bar-grad)"/>
+        <rect x="24" y="176" width="0" height="8" rx="4" fill="url(#bar-grad)"/>
       </g>
     </g>
 
