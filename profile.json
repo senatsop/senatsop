@@ -5,12 +5,29 @@
   "tagline": "Vibecoder with no skills — turning prompts, chaos, and late-night ideas into shipped apps & bots.",
   "status": "VIBECODING · NO SKILLS",
   "location": "he/him · 203+ contributions",
-  "currentlyBuilding": {
-    "name": "loadwise",
-    "summary": "Constraint-based academic scheduling & OCR load studio",
-    "stack": "TypeScript · OCR · Scheduling",
-    "progress": 88
-  },
+  "inProgress": [
+    {
+      "name": "sakay",
+      "tag": "TRANSIT",
+      "summary": "Bohol public transit journey planner & live route matrix",
+      "stack": "TypeScript · Transit · Maps",
+      "progress": 76
+    },
+    {
+      "name": "loadwise",
+      "tag": "AI / OCR",
+      "summary": "Constraint-based student academic load scheduler & OCR studio",
+      "stack": "TypeScript · OCR · Scheduling",
+      "progress": 88
+    },
+    {
+      "name": "canvas lms injector",
+      "tag": "DOM BYPASS",
+      "summary": "Tab-switch & visibility detection simulator for LMS test suites",
+      "stack": "JavaScript · DOM · Focus API",
+      "progress": 94
+    }
+  ],
   "focus": [
     "Pure Vibecoding With No Skills",
     "Smart Web & Transit Platforms",
@@ -36,13 +53,6 @@
       "stack": "TypeScript · Transit · Maps"
     },
     {
-      "name": "antigravity-discord-controller",
-      "repo": "senatsop/antigravity-discord-controller",
-      "badge": "DISCORD BOT",
-      "description": "Antigravity IDE × Discord remote control and live notification system.",
-      "stack": "JavaScript · Discord Bot · Automation"
-    },
-    {
       "name": "loadwise",
       "repo": "senatsop/loadwise",
       "badge": "AI / OCR",
@@ -50,11 +60,32 @@
       "stack": "TypeScript · OCR · Scheduling"
     },
     {
+      "name": "canvas lms injector",
+      "repo": "senatsop/CANVAS-LMS-BYPASS",
+      "badge": "DOM BYPASS",
+      "description": "Simulates constant visibility and window focus to test LMS proctoring and detection barriers.",
+      "stack": "JavaScript · DOM · Focus API"
+    },
+    {
+      "name": "antigravity-discord-controller",
+      "repo": "senatsop/antigravity-discord-controller",
+      "badge": "DISCORD BOT",
+      "description": "Antigravity IDE × Discord remote control and live notification system.",
+      "stack": "JavaScript · Discord Bot · Automation"
+    },
+    {
       "name": "IM-Project",
       "repo": "senatsop/IM-Project",
       "badge": "PUBLIC",
       "description": "Campus Lost And Found web application for reporting and recovering lost items.",
       "stack": "JavaScript · Web App"
+    },
+    {
+      "name": "clash-royale",
+      "repo": "senatsop/clash-royale",
+      "badge": "GAME",
+      "description": "Clash Royale inspired interactive browser combat project.",
+      "stack": "HTML5 · CSS3 · JavaScript"
     }
   ],
   "techStack": {

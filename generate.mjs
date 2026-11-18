@@ -254,7 +254,6 @@ function renderHeroSvg(profile, mode) {
 
   const taglineLines = wrapText(profile.tagline, 54, 2);
   const stackChips = Object.values(profile.techStack).flat().slice(0, 4);
-  const progress = Math.max(0, Math.min(100, Number(profile.currentlyBuilding?.progress ?? 80)));
 
   let chipX = 56;
   const chipsMarkup = stackChips
@@ -284,9 +283,6 @@ function renderHeroSvg(profile, mode) {
     </clipPath>
     <clipPath id="card-clip">
       <rect width="388" height="292" rx="18"/>
-    </clipPath>
-    <clipPath id="prog-clip">
-      <rect x="24" y="159" width="${Number(((186 * progress) / 100).toFixed(1))}" height="7" rx="3.5"/>
     </clipPath>
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="${t.bgTop}"/>
@@ -528,19 +524,20 @@ function renderHeroSvg(profile, mode) {
         <text x="364" y="28" text-anchor="end" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10.5" letter-spacing="1">SPATIAL // DEPTH 6X</text>
         <line x1="16" y1="42" x2="372" y2="42" stroke="${t.cardStroke}" stroke-width="1"/>
 
-        <text x="24" y="74" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" letter-spacing="1">ACTIVE BUILD</text>
-        <text x="24" y="99" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="19" font-weight="700">${esc(profile.currentlyBuilding.name)}</text>
-        <text x="24" y="120" fill="${t.textSecondary}" font-family="${FONT_MONO}" font-size="11">${esc(profile.currentlyBuilding.stack)}</text>
+        <text x="24" y="68" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" letter-spacing="1">ACTIVE PIPELINES (3)</text>
+        ${(profile.inProgress || [])
+          .map((item, idx) => {
+            const y = 88 + idx * 36;
+            const pct = Math.max(0, Math.min(100, Number(item.progress ?? 80)));
+            const fillW = Number(((186 * pct) / 100).toFixed(1));
+            return `<text x="24" y="${y}" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="13" font-weight="700">${esc(item.name)}</text>
+        <text x="210" y="${y}" text-anchor="end" fill="${t.accentMint}" font-family="${FONT_MONO}" font-size="10.5" font-weight="700">${pct}%</text>
+        <rect x="24" y="${y + 7}" width="186" height="5.5" rx="2.75" fill="${t.track}"/>
+        <rect x="24" y="${y + 7}" width="${fillW}" height="5.5" rx="2.75" fill="url(#accent-bar)"/>`;
+          })
+          .join('\n        ')}
 
-        <text x="24" y="150" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" letter-spacing="0.8">SHIP PROGRESS</text>
-        <text x="210" y="150" text-anchor="end" fill="${t.accentMint}" font-family="${FONT_MONO}" font-size="10.5" font-weight="700">${progress}%</text>
-        <rect x="24" y="159" width="186" height="7" rx="3.5" fill="${t.track}"/>
-        <rect x="24" y="159" width="${Number(((186 * progress) / 100).toFixed(1))}" height="7" rx="3.5" fill="url(#accent-bar)"/>
-        <g clip-path="url(#prog-clip)">
-          <rect class="prog-shimmer" x="24" y="159" width="54" height="7" fill="url(#sheen)"/>
-        </g>
-
-        <text x="24" y="188" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" letter-spacing="0.8">SIGNAL CADENCE</text>
+        <text x="24" y="198" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" letter-spacing="0.8">SIGNAL CADENCE</text>
         ${bars.join('\n        ')}
 
         <g transform="translate(304, 152)">
@@ -573,8 +570,6 @@ function renderBentoSvg(profile, mode) {
   const H = 256;
   const focus = (profile.focus || []).slice(0, 3);
   const highlights = (profile.highlights || []).slice(0, 3);
-  const buildLines = wrapText(profile.currentlyBuilding.summary, 36, 2);
-  const progress = Math.max(0, Math.min(100, Number(profile.currentlyBuilding?.progress ?? 80)));
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Core Focus, Current Build, and Craft Matrix">
   <title>Profile Architecture Bento</title>
@@ -675,26 +670,33 @@ function renderBentoSvg(profile, mode) {
       </g>
     </g>
 
-    <!-- Card 2: Currently Building -->
+    <!-- Card 2: Currently Building / Active Pipelines -->
     <g transform="translate(413, 24)">
       <g class="bento-float-2">
         <rect width="374" height="208" rx="16" fill="${t.cardFill}" stroke="${t.cardStroke}" stroke-width="1.2"/>
         <line x1="18" y1="1" x2="356" y2="1" stroke="${t.cardHighlight}" stroke-width="1"/>
-        <text x="24" y="34" fill="${t.accentMint}" font-family="${FONT_MONO}" font-size="11" font-weight="700" letter-spacing="1.2">02 // IN THE LAB</text>
+        <text x="24" y="34" fill="${t.accentMint}" font-family="${FONT_MONO}" font-size="11" font-weight="700" letter-spacing="1.2">02 // IN THE LAB (3 ACTIVE)</text>
         <circle class="pulse" cx="346" cy="30" r="4" fill="${t.accentMint}"/>
         <line x1="24" y1="48" x2="350" y2="48" stroke="${t.cardStroke}"/>
 
-        <text x="24" y="82" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="20" font-weight="700">${esc(profile.currentlyBuilding.name)}</text>
-        <rect class="cursor-blink" x="${24 + profile.currentlyBuilding.name.length * 11.4 + 6}" y="66" width="8" height="18" rx="1.5" fill="${t.accentMint}"/>
-        ${buildLines
-          .map(
-            (line, idx) =>
-              `<text x="24" y="${108 + idx * 20}" fill="${t.textSecondary}" font-family="${FONT_SANS}" font-size="13.5">${esc(line)}</text>`
-          )
+        ${(profile.inProgress || [])
+          .map((item, idx) => {
+            const y = 74 + idx * 44;
+            const pct = Math.max(0, Math.min(100, Number(item.progress ?? 80)));
+            const fillW = Number(((326 * pct) / 100).toFixed(1));
+            const badgeW = Math.max(64, item.tag.length * 6.8 + 16);
+            const dotFill = idx === 0 ? t.accent : idx === 1 ? t.accentMint : t.accentAlt;
+            return `<g>
+          <circle cx="28" cy="${y - 4}" r="3.2" fill="${dotFill}"/>
+          <text x="38" y="${y}" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="14" font-weight="700">${esc(item.name)}</text>
+          <rect x="188" y="${y - 12}" width="${badgeW}" height="16" rx="8" fill="${t.pillFill}" stroke="${t.pillStroke}"/>
+          <text x="${188 + badgeW / 2}" y="${y}" text-anchor="middle" fill="${t.pillText}" font-family="${FONT_MONO}" font-size="9" font-weight="700">${esc(item.tag)}</text>
+          <text x="350" y="${y}" text-anchor="end" fill="${t.accentMint}" font-family="${FONT_MONO}" font-size="11" font-weight="700">${pct}%</text>
+          <rect x="24" y="${y + 7}" width="326" height="6" rx="3" fill="${t.track}"/>
+          <rect x="24" y="${y + 7}" width="${fillW}" height="6" rx="3" fill="url(#bar-grad)"/>
+        </g>`;
+          })
           .join('\n        ')}
-        <text x="24" y="156" fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="11">${esc(profile.currentlyBuilding.stack)}</text>
-        <rect x="24" y="172" width="326" height="8" rx="4" fill="${t.track}"/>
-        <rect x="24" y="172" width="${Number(((326 * progress) / 100).toFixed(1))}" height="8" rx="4" fill="url(#bar-grad)"/>
       </g>
     </g>
 
@@ -1115,7 +1117,7 @@ function selfCheck({ outputs, readme }) {
     assert.equal(openG, closeG, `${file}: unbalanced <g> tags (${openG} vs ${closeG})`);
   }
   const refs = [...readme.matchAll(/\.\/assets\/[a-z0-9-]+\.svg/gi)].map((m) => m[0]);
-  assert.ok(refs.length >= 20, 'README missing expected asset references');
+  assert.ok(refs.length >= 24, 'README missing expected asset references');
   for (const ref of refs) {
     assert.ok(existsSync(join(ROOT, ref)), `README references missing file: ${ref}`);
   }

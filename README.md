@@ -38,23 +38,36 @@
   <img alt="sakay — Bohol Province-wide intelligent public transportation info and journey planning platform." src="./assets/proj-1-dark.svg" width="48.8%" />
 </picture></a>
   &nbsp;
-  <a href="https://github.com/senatsop/antigravity-discord-controller"><picture>
+  <a href="https://github.com/senatsop/loadwise"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-2-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-2-light.svg" />
-  <img alt="antigravity-discord-controller — Antigravity IDE × Discord remote control and live notification system." src="./assets/proj-2-dark.svg" width="48.8%" />
+  <img alt="loadwise — Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio." src="./assets/proj-2-dark.svg" width="48.8%" />
 </picture></a>
 </p>
 <p align="center">
-  <a href="https://github.com/senatsop/loadwise"><picture>
+  <a href="https://github.com/senatsop/CANVAS-LMS-BYPASS"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-3-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-3-light.svg" />
-  <img alt="loadwise — Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio." src="./assets/proj-3-dark.svg" width="48.8%" />
+  <img alt="canvas lms injector — Simulates constant visibility and window focus to test LMS proctoring and detection barriers." src="./assets/proj-3-dark.svg" width="48.8%" />
 </picture></a>
   &nbsp;
-  <a href="https://github.com/senatsop/IM-Project"><picture>
+  <a href="https://github.com/senatsop/antigravity-discord-controller"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-4-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-4-light.svg" />
-  <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-4-dark.svg" width="48.8%" />
+  <img alt="antigravity-discord-controller — Antigravity IDE × Discord remote control and live notification system." src="./assets/proj-4-dark.svg" width="48.8%" />
+</picture></a>
+</p>
+<p align="center">
+  <a href="https://github.com/senatsop/IM-Project"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-5-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-5-light.svg" />
+  <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-5-dark.svg" width="48.8%" />
+</picture></a>
+  &nbsp;
+  <a href="https://github.com/senatsop/clash-royale"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-6-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-6-light.svg" />
+  <img alt="clash-royale — Clash Royale inspired interactive browser combat project." src="./assets/proj-6-dark.svg" width="48.8%" />
 </picture></a>
 </p>
 

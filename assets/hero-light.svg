@@ -7,9 +7,6 @@
     <clipPath id="card-clip">
       <rect width="388" height="292" rx="18"/>
     </clipPath>
-    <clipPath id="prog-clip">
-      <rect x="24" y="159" width="163.7" height="7" rx="3.5"/>
-    </clipPath>
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F8FAFC"/>
       <stop offset="55%" stop-color="#F1F5F9"/>
@@ -456,19 +453,21 @@
         <text x="364" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1">SPATIAL // DEPTH 6X</text>
         <line x1="16" y1="42" x2="372" y2="42" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
 
-        <text x="24" y="74" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1">ACTIVE BUILD</text>
-        <text x="24" y="99" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="19" font-weight="700">loadwise</text>
-        <text x="24" y="120" fill="#475569" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">TypeScript · OCR · Scheduling</text>
+        <text x="24" y="68" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1">ACTIVE PIPELINES (3)</text>
+        <text x="24" y="88" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">sakay</text>
+        <text x="210" y="88" text-anchor="end" fill="#0D9488" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700">76%</text>
+        <rect x="24" y="95" width="186" height="5.5" rx="2.75" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="95" width="141.4" height="5.5" rx="2.75" fill="url(#accent-bar)"/>
+        <text x="24" y="124" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">loadwise</text>
+        <text x="210" y="124" text-anchor="end" fill="#0D9488" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700">88%</text>
+        <rect x="24" y="131" width="186" height="5.5" rx="2.75" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="131" width="163.7" height="5.5" rx="2.75" fill="url(#accent-bar)"/>
+        <text x="24" y="160" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">canvas lms injector</text>
+        <text x="210" y="160" text-anchor="end" fill="#0D9488" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700">94%</text>
+        <rect x="24" y="167" width="186" height="5.5" rx="2.75" fill="rgba(15,23,42,0.10)"/>
+        <rect x="24" y="167" width="174.8" height="5.5" rx="2.75" fill="url(#accent-bar)"/>
 
-        <text x="24" y="150" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.8">SHIP PROGRESS</text>
-        <text x="210" y="150" text-anchor="end" fill="#0D9488" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700">88%</text>
-        <rect x="24" y="159" width="186" height="7" rx="3.5" fill="rgba(15,23,42,0.10)"/>
-        <rect x="24" y="159" width="163.7" height="7" rx="3.5" fill="url(#accent-bar)"/>
-        <g clip-path="url(#prog-clip)">
-          <rect class="prog-shimmer" x="24" y="159" width="54" height="7" fill="url(#sheen)"/>
-        </g>
-
-        <text x="24" y="188" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.8">SIGNAL CADENCE</text>
+        <text x="24" y="198" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.8">SIGNAL CADENCE</text>
         <rect class="eq-bar" style="animation-delay:0.00s" x="24" y="218" width="7" height="18" rx="3.5" fill="#0D9488" opacity="0.9"/>
         <rect class="eq-bar" style="animation-delay:0.14s" x="38" y="204" width="7" height="32" rx="3.5" fill="#4F46E5" opacity="0.9"/>
         <rect class="eq-bar" style="animation-delay:0.28s" x="52" y="214" width="7" height="22" rx="3.5" fill="#0284C7" opacity="0.9"/>
