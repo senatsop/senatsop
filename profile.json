@@ -93,5 +93,13 @@
     "AI & Tooling": ["Claude", "Codex", "Antigravity IDE", "Git", "GitHub"],
     "Focus": ["Vibecoder with no skills", "Web Apps", "Discord Bots", "SVG Motion"]
   },
+  "triedLanguages": [
+    { "name": "C", "outcome": "SEGFAULT", "vibecoderLog": "Dereferenced NULL pointer in 4 seconds flat", "color": "EF4444" },
+    { "name": "Python", "outcome": "INDENT HELL", "vibecoderLog": "Mixed tabs & spaces destroyed whole script", "color": "38BDF8" },
+    { "name": "C++", "outcome": "TEMPLATE CRASH", "vibecoderLog": "6,000-line error log from std::vector<int>", "color": "F97316" },
+    { "name": "Rust", "outcome": "BORROW DENIED", "vibecoderLog": "Fought borrow checker for 3 hours, lost 0-1", "color": "FB923C" },
+    { "name": "Go", "outcome": "GOROUTINE LEAK", "vibecoderLog": "Unclosed channel spawned 800 silent threads", "color": "2DD4BF" },
+    { "name": "Java", "outcome": "FACTORY HELL", "vibecoderLog": "AbstractSingletonServiceProxyFactoryDecorator", "color": "EAB308" }
+  ],
   "footerNote": "lowkey, I like her :(  ·  vibecoder with no skills"
 }

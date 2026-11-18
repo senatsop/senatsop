@@ -748,6 +748,90 @@ function renderBentoSvg(profile, mode) {
 </svg>`;
 }
 
+function renderTriedLanguagesSvg(profile, mode) {
+  const t = THEMES[mode];
+  const W = 1200;
+  const H = 224;
+  const list = (profile.triedLanguages || []).slice(0, 6);
+  const cardW = 374;
+  const cardH = 88;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Languages Attempted While Vibecoding">
+  <title>Tried Languages During Vibecoding</title>
+  <defs>
+    <clipPath id="tried-clip">
+      <rect width="${W}" height="${H}" rx="18"/>
+    </clipPath>
+    <pattern id="dot-pat-tried" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="${t.dotGrid}"/>
+    </pattern>
+    <linearGradient id="tried-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${t.bgTop}"/>
+      <stop offset="100%" stop-color="${t.bgBot}"/>
+    </linearGradient>
+    <linearGradient id="tried-scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.accent}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#EF4444" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="${t.accentAlt}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bg-dots { animation: drift-dots 26s linear infinite; }
+    .scan-line { animation: scan-x 6s ease-in-out infinite; }
+    .pulse-red { animation: blink-fast 1.6s ease-in-out infinite; }
+    @keyframes drift-dots {
+      from { transform: translate(0px, 0px); }
+      to   { transform: translate(-48px, -24px); }
+    }
+    @keyframes scan-x {
+      0%, 100% { transform: translateX(0px); opacity: 0.3; }
+      50%      { transform: translateX(${W - 240}px); opacity: 0.95; }
+    }
+    @keyframes blink-fast {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#tried-clip)">
+    <rect width="${W}" height="${H}" fill="url(#tried-bg)"/>
+    <rect class="bg-dots" x="0" y="0" width="${W + 96}" height="${H + 48}" fill="url(#dot-pat-tried)"/>
+    <rect class="scan-line" x="0" y="0" width="240" height="2" fill="url(#tried-scan)"/>
+
+    <!-- Header bar -->
+    <text x="24" y="24" fill="${t.accent}" font-family="${FONT_MONO}" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // EXPERIMENTAL LANGUAGES ATTEMPTED WHILE VIBECODING</text>
+    <rect x="${W - 200}" y="12" width="176" height="18" rx="9" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)"/>
+    <circle class="pulse-red" cx="${W - 188}" cy="21" r="3" fill="#EF4444"/>
+    <text x="${W - 176}" y="24" fill="#F87171" font-family="${FONT_MONO}" font-size="9.5" font-weight="700">SURVIVAL RATE: 0%</text>
+
+    <!-- 6 Language Cards in 3x2 Grid -->
+    ${list.map((item, idx) => {
+      const col = idx % 3;
+      const row = Math.floor(idx / 3);
+      const x = 20 + col * (cardW + 19);
+      const y = 38 + row * (cardH + 10);
+      const colorHex = '#' + (item.color || 'EF4444');
+      return `<g transform="translate(${x}, ${y})">
+        <rect width="${cardW}" height="${cardH}" rx="12" fill="${t.cardFill}" stroke="${t.cardStroke}" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="${cardW - 12}" y2="1" stroke="${t.cardHighlight}" stroke-width="1"/>
+        <text x="16" y="28" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="16" font-weight="800">${esc(item.name)}</text>
+        <rect x="${cardW - 124}" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="${cardW - 69}" y="26" text-anchor="middle" fill="${colorHex}" font-family="${FONT_MONO}" font-size="9" font-weight="700">${esc(item.outcome)}</text>
+        <text x="16" y="52" fill="${t.textSecondary}" font-family="${FONT_MONO}" font-size="11" font-weight="500">${esc(item.vibecoderLog)}</text>
+        <rect x="16" y="66" width="${cardW - 32}" height="5" rx="2.5" fill="${t.track}"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="${colorHex}"/>
+      </g>`;
+    }).join('\n    ')}
+
+    <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="17.5" fill="none" stroke="${t.border}" stroke-width="1.5"/>
+  </g>
+</svg>`;
+}
+
 function renderProjectCardSvg(project, index, mode) {
   const t = THEMES[mode];
   const W = 580;
@@ -1075,7 +1159,13 @@ ${pictureBlock('div-stack', 'Depth 03 — Tech Stack & Arsenal')}
 
 <br />
 
-${pictureBlock('div-telemetry', 'Depth 04 — Live Telemetry')}
+${pictureBlock('div-tried', 'Depth 04 — Tried Languages During Vibecoding')}
+
+${pictureBlock('tried', 'Languages Attempted While Vibecoding With No Skills')}
+
+<br />
+
+${pictureBlock('div-telemetry', 'Depth 05 — Live Telemetry')}
 
 <p>
   <img src="https://github-readme-stats.vercel.app/api?username=${encodeURIComponent(profile.handle)}&show_icons=true&bg_color=060B18&title_color=38BDF8&icon_color=2DD4BF&text_color=CBD5E1&border_color=1E293B&border_radius=14" height="168" alt="GitHub Stats" />
@@ -1105,8 +1195,12 @@ function generate() {
     ['div-builds-light.svg', renderDividerSvg('DEPTH // 02', 'FEATURED BUILDS', 101, 'light')],
     ['div-stack-dark.svg', renderDividerSvg('DEPTH // 03', 'TECH STACK & ARSENAL', 202, 'dark')],
     ['div-stack-light.svg', renderDividerSvg('DEPTH // 03', 'TECH STACK & ARSENAL', 202, 'light')],
-    ['div-telemetry-dark.svg', renderDividerSvg('DEPTH // 04', 'LIVE TELEMETRY', 303, 'dark')],
-    ['div-telemetry-light.svg', renderDividerSvg('DEPTH // 04', 'LIVE TELEMETRY', 303, 'light')],
+    ['div-tried-dark.svg', renderDividerSvg('DEPTH // 04', 'TRIED LANGUAGES DURING VIBECODING', 303, 'dark')],
+    ['div-tried-light.svg', renderDividerSvg('DEPTH // 04', 'TRIED LANGUAGES DURING VIBECODING', 303, 'light')],
+    ['tried-dark.svg', renderTriedLanguagesSvg(profile, 'dark')],
+    ['tried-light.svg', renderTriedLanguagesSvg(profile, 'light')],
+    ['div-telemetry-dark.svg', renderDividerSvg('DEPTH // 05', 'LIVE TELEMETRY', 404, 'dark')],
+    ['div-telemetry-light.svg', renderDividerSvg('DEPTH // 05', 'LIVE TELEMETRY', 404, 'light')],
   ];
 
   (profile.projects || []).forEach((p, idx) => {

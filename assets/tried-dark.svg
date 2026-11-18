@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 224" width="1200" height="224" role="img" aria-label="Languages Attempted While Vibecoding">
+  <title>Tried Languages During Vibecoding</title>
+  <defs>
+    <clipPath id="tried-clip">
+      <rect width="1200" height="224" rx="18"/>
+    </clipPath>
+    <pattern id="dot-pat-tried" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="rgba(148,163,184,0.18)"/>
+    </pattern>
+    <linearGradient id="tried-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040712"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="tried-scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#EF4444" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bg-dots { animation: drift-dots 26s linear infinite; }
+    .scan-line { animation: scan-x 6s ease-in-out infinite; }
+    .pulse-red { animation: blink-fast 1.6s ease-in-out infinite; }
+    @keyframes drift-dots {
+      from { transform: translate(0px, 0px); }
+      to   { transform: translate(-48px, -24px); }
+    }
+    @keyframes scan-x {
+      0%, 100% { transform: translateX(0px); opacity: 0.3; }
+      50%      { transform: translateX(960px); opacity: 0.95; }
+    }
+    @keyframes blink-fast {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#tried-clip)">
+    <rect width="1200" height="224" fill="url(#tried-bg)"/>
+    <rect class="bg-dots" x="0" y="0" width="1296" height="272" fill="url(#dot-pat-tried)"/>
+    <rect class="scan-line" x="0" y="0" width="240" height="2" fill="url(#tried-scan)"/>
+
+    <!-- Header bar -->
+    <text x="24" y="24" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // EXPERIMENTAL LANGUAGES ATTEMPTED WHILE VIBECODING</text>
+    <rect x="1000" y="12" width="176" height="18" rx="9" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)"/>
+    <circle class="pulse-red" cx="1012" cy="21" r="3" fill="#EF4444"/>
+    <text x="1024" y="24" fill="#F87171" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700">SURVIVAL RATE: 0%</text>
+
+    <!-- 6 Language Cards in 3x2 Grid -->
+    <g transform="translate(20, 38)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">C</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#EF4444" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">SEGFAULT</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Dereferenced NULL pointer in 4 seconds flat</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#EF4444"/>
+      </g>
+    <g transform="translate(413, 38)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Python</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">INDENT HELL</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Mixed tabs &amp; spaces destroyed whole script</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#38BDF8"/>
+      </g>
+    <g transform="translate(806, 38)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">C++</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#F97316" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">TEMPLATE CRASH</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">6,000-line error log from std::vector&lt;int&gt;</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#F97316"/>
+      </g>
+    <g transform="translate(20, 136)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Rust</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">BORROW DENIED</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Fought borrow checker for 3 hours, lost 0-1</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#FB923C"/>
+      </g>
+    <g transform="translate(413, 136)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Go</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">GOROUTINE LEAK</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Unclosed channel spawned 800 silent threads</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#2DD4BF"/>
+      </g>
+    <g transform="translate(806, 136)">
+        <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
+        <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Java</text>
+        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
+        <text x="305" y="26" text-anchor="middle" fill="#EAB308" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">FACTORY HELL</text>
+        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">AbstractSingletonServiceProxyFactoryDecorator</text>
+        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#EAB308"/>
+      </g>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="222.5" rx="17.5" fill="none" stroke="rgba(148,163,184,0.22)" stroke-width="1.5"/>
+  </g>
+</svg>

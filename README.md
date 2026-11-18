@@ -98,9 +98,23 @@
 <br />
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-tried-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-tried-light.svg" />
+  <img alt="Depth 04 — Tried Languages During Vibecoding" src="./assets/div-tried-dark.svg" width="100%" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/tried-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tried-light.svg" />
+  <img alt="Languages Attempted While Vibecoding With No Skills" src="./assets/tried-dark.svg" width="100%" />
+</picture>
+
+<br />
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/div-telemetry-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/div-telemetry-light.svg" />
-  <img alt="Depth 04 — Live Telemetry" src="./assets/div-telemetry-dark.svg" width="100%" />
+  <img alt="Depth 05 — Live Telemetry" src="./assets/div-telemetry-dark.svg" width="100%" />
 </picture>
 
 <p>
