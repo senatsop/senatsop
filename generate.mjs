@@ -803,10 +803,10 @@ function renderTriedLanguagesSvg(profile, mode) {
     <rect class="scan-line" x="0" y="0" width="240" height="2" fill="url(#tried-scan)"/>
 
     <!-- Header bar -->
-    <text x="24" y="24" fill="${t.accent}" font-family="${FONT_MONO}" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // EXPERIMENTAL LANGUAGES ATTEMPTED WHILE VIBECODING</text>
-    <rect x="${W - 200}" y="12" width="176" height="18" rx="9" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)"/>
-    <circle class="pulse-red" cx="${W - 188}" cy="21" r="3" fill="#EF4444"/>
-    <text x="${W - 176}" y="24" fill="#F87171" font-family="${FONT_MONO}" font-size="9.5" font-weight="700">SURVIVAL RATE: 0%</text>
+    <text x="24" y="24" fill="${t.accent}" font-family="${FONT_MONO}" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // ACCURATE REPO TELEMETRY ACROSS ALL 21 REPOSITORIES</text>
+    <rect x="${W - 240}" y="12" width="216" height="18" rx="9" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.35)"/>
+    <circle class="pulse-red" cx="${W - 228}" cy="21" r="3" fill="#2DD4BF"/>
+    <text x="${W - 216}" y="24" fill="#2DD4BF" font-family="${FONT_MONO}" font-size="9" font-weight="700">VERIFIED DATA // 21 REPOS</text>
 
     <!-- 6 Language Cards in 3x2 Grid -->
     ${list.map((item, idx) => {
@@ -815,15 +815,17 @@ function renderTriedLanguagesSvg(profile, mode) {
       const x = 20 + col * (cardW + 19);
       const y = 38 + row * (cardH + 10);
       const colorHex = '#' + (item.color || 'EF4444');
+      const barW = Math.max(12, Math.round(((item.survival || 50) / 100) * (cardW - 32)));
       return `<g transform="translate(${x}, ${y})">
         <rect width="${cardW}" height="${cardH}" rx="12" fill="${t.cardFill}" stroke="${t.cardStroke}" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="${cardW - 12}" y2="1" stroke="${t.cardHighlight}" stroke-width="1"/>
-        <text x="16" y="28" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="16" font-weight="800">${esc(item.name)}</text>
-        <rect x="${cardW - 124}" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="${cardW - 69}" y="26" text-anchor="middle" fill="${colorHex}" font-family="${FONT_MONO}" font-size="9" font-weight="700">${esc(item.outcome)}</text>
-        <text x="16" y="52" fill="${t.textSecondary}" font-family="${FONT_MONO}" font-size="11" font-weight="500">${esc(item.vibecoderLog)}</text>
-        <rect x="16" y="66" width="${cardW - 32}" height="5" rx="2.5" fill="${t.track}"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="${colorHex}"/>
+        <text x="16" y="27" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="15" font-weight="800">${esc(item.name)} <tspan fill="${t.textMuted}" font-family="${FONT_MONO}" font-size="10" font-weight="500">(${esc(item.footprint)})</tspan></text>
+        <rect x="${cardW - 124}" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="${colorHex}66"/>
+        <text x="${cardW - 69}" y="25" text-anchor="middle" fill="${colorHex}" font-family="${FONT_MONO}" font-size="8.5" font-weight="700">${esc(item.outcome)}</text>
+        <text x="16" y="49" fill="${t.textSecondary}" font-family="${FONT_MONO}" font-size="10.5" font-weight="500">${esc(item.vibecoderLog)}</text>
+        <rect x="16" y="64" width="${cardW - 32}" height="5" rx="2.5" fill="${t.track}"/>
+        <rect x="16" y="64" width="${barW}" height="5" rx="2.5" fill="${colorHex}"/>
+        <text x="${cardW - 16}" y="77" text-anchor="end" fill="${colorHex}" font-family="${FONT_MONO}" font-size="8" font-weight="700">${item.pct} · ${item.survival}% SURVIVAL</text>
       </g>`;
     }).join('\n    ')}
 

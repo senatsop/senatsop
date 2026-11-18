@@ -45,71 +45,77 @@
     <rect class="scan-line" x="0" y="0" width="240" height="2" fill="url(#tried-scan)"/>
 
     <!-- Header bar -->
-    <text x="24" y="24" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // EXPERIMENTAL LANGUAGES ATTEMPTED WHILE VIBECODING</text>
-    <rect x="1000" y="12" width="176" height="18" rx="9" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)"/>
-    <circle class="pulse-red" cx="1012" cy="21" r="3" fill="#EF4444"/>
-    <text x="1024" y="24" fill="#F87171" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700">SURVIVAL RATE: 0%</text>
+    <text x="24" y="24" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4">// TRIAL_LAB // ACCURATE REPO TELEMETRY ACROSS ALL 21 REPOSITORIES</text>
+    <rect x="960" y="12" width="216" height="18" rx="9" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.35)"/>
+    <circle class="pulse-red" cx="972" cy="21" r="3" fill="#2DD4BF"/>
+    <text x="984" y="24" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">VERIFIED DATA // 21 REPOS</text>
 
     <!-- 6 Language Cards in 3x2 Grid -->
     <g transform="translate(20, 38)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">C</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#EF4444" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">SEGFAULT</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Dereferenced NULL pointer in 4 seconds flat</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#EF4444"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">JavaScript <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(2.85 MB · 10 Repos)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#FACC1566"/>
+        <text x="305" y="25" text-anchor="middle" fill="#FACC15" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">VIBE CAPITAL</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">2.85 MB across 10 repos. Async event loop chaos &amp; DOM hooks.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="328" height="5" rx="2.5" fill="#FACC15"/>
+        <text x="358" y="77" text-anchor="end" fill="#FACC15" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">72.3% · 96% SURVIVAL</text>
       </g>
     <g transform="translate(413, 38)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Python</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">INDENT HELL</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Mixed tabs &amp; spaces destroyed whole script</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#38BDF8"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">TypeScript <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(243 KB · 3 Repos)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#38BDF866"/>
+        <text x="305" y="25" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">ANY BYPASS</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">243 KB across sakay &amp; loadwise. Strict types beaten with &apos;as any&apos;.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="301" height="5" rx="2.5" fill="#38BDF8"/>
+        <text x="358" y="77" text-anchor="end" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">6.2% · 88% SURVIVAL</text>
       </g>
     <g transform="translate(806, 38)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">C++</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#F97316" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">TEMPLATE CRASH</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">6,000-line error log from std::vector&lt;int&gt;</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#F97316"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">PLpgSQL <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(135 KB · 3 Repos)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#60A5FA66"/>
+        <text x="305" y="25" text-anchor="middle" fill="#60A5FA" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">TRIGGER MAZE</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">135 KB in campus-facility &amp; IM-Project. Multi-table relational joins.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="246" height="5" rx="2.5" fill="#60A5FA"/>
+        <text x="358" y="77" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">3.4% · 72% SURVIVAL</text>
       </g>
     <g transform="translate(20, 136)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Rust</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">BORROW DENIED</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Fought borrow checker for 3 hours, lost 0-1</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#FB923C"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">PowerShell <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(36.8 KB · 2 Repos)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#818CF866"/>
+        <text x="305" y="25" text-anchor="middle" fill="#818CF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">EXEC BYPASS</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">36.8 KB daemon orchestration &amp; Windows CLI automation scripts.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="219" height="5" rx="2.5" fill="#818CF8"/>
+        <text x="358" y="77" text-anchor="end" fill="#818CF8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">0.9% · 64% SURVIVAL</text>
       </g>
     <g transform="translate(413, 136)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Go</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">GOROUTINE LEAK</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">Unclosed channel spawned 800 silent threads</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#2DD4BF"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">Rust <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(33.7 KB · 1 Repo)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#FB923C66"/>
+        <text x="305" y="25" text-anchor="middle" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">BORROW SURVIVED</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">33.7 KB constraint engine in loadwise. Borrow checker survived.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="178" height="5" rx="2.5" fill="#FB923C"/>
+        <text x="358" y="77" text-anchor="end" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">0.8% · 52% SURVIVAL</text>
       </g>
     <g transform="translate(806, 136)">
         <rect width="374" height="88" rx="12" fill="rgba(10,17,36,0.78)" stroke="rgba(148,163,184,0.24)" stroke-width="1.1"/>
         <line x1="12" y1="1" x2="362" y2="1" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
-        <text x="16" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="16" font-weight="800">Java</text>
-        <rect x="250" y="14" width="110" height="18" rx="9" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)"/>
-        <text x="305" y="26" text-anchor="middle" fill="#EAB308" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700">FACTORY HELL</text>
-        <text x="16" y="52" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500">AbstractSingletonServiceProxyFactoryDecorator</text>
-        <rect x="16" y="66" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
-        <rect x="16" y="66" width="6" height="5" rx="2.5" fill="#EAB308"/>
+        <text x="16" y="27" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="800">Python <tspan fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500">(6.1 KB · 2 Repos)</tspan></text>
+        <rect x="250" y="13" width="110" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="#2DD4BF66"/>
+        <text x="305" y="25" text-anchor="middle" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700">INDENT VIBES</text>
+        <text x="16" y="49" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500">6.1 KB Discord bot hooks &amp; GIS route solvers. Virtualenv survived.</text>
+        <rect x="16" y="64" width="342" height="5" rx="2.5" fill="rgba(148,163,184,0.18)"/>
+        <rect x="16" y="64" width="144" height="5" rx="2.5" fill="#2DD4BF"/>
+        <text x="358" y="77" text-anchor="end" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" font-weight="700">0.2% · 42% SURVIVAL</text>
       </g>
 
     <rect x="0.75" y="0.75" width="1198.5" height="222.5" rx="17.5" fill="none" stroke="rgba(148,163,184,0.22)" stroke-width="1.5"/>
