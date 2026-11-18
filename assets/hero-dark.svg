@@ -297,14 +297,19 @@
 
     <!-- Zoomed-In Blue Black Hole (Gargantua Singularity) -->
     <g class="eclipse-pulse">
-      <circle cx="620" cy="236" r="185" fill="url(#eclipse-glow)"/>
-      <ellipse cx="620" cy="236" rx="220" ry="42" transform="rotate(-14 620 236)" fill="url(#disk-grad)" opacity="0.88"/>
-      <path d="M 500 236 C 500 120 740 120 740 236" stroke="#ffffff" stroke-width="4.5" fill="none" opacity="0.92"/>
-      <path d="M 515 236 C 515 330 725 330 725 236" stroke="#38BDF8" stroke-width="3" fill="none" opacity="0.75"/>
-      <circle cx="620" cy="236" r="74" fill="none" stroke="#38BDF8" stroke-width="4" opacity="0.6"/>
-      <circle cx="620" cy="236" r="72" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.98"/>
-      <circle cx="620" cy="236" r="69" fill="#000000"/>
-      <circle cx="620" cy="236" r="32" fill="#000000"/>
+      <circle cx="620" cy="236" r="195" fill="url(#eclipse-glow)"/>
+      <ellipse cx="620" cy="236" rx="225" ry="42" transform="rotate(-14 620 236)" fill="url(#disk-grad)" opacity="0.88"/>
+      <path d="M 460 236 C 460 110 780 110 780 236 C 750 236 740 145 620 145 C 500 145 490 236 460 236 Z" fill="url(#disk-grad)" opacity="0.9"/>
+      <path d="M 480 236 C 480 140 760 140 760 236" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.95"/>
+      <path d="M 480 236 C 480 345 760 345 760 236" stroke="#38BDF8" stroke-width="2.5" fill="none" opacity="0.8"/>
+      <circle cx="620" cy="236" r="76" fill="#000000"/>
+      <circle cx="620" cy="236" r="78" fill="none" stroke="#38BDF8" stroke-width="3.5" opacity="0.7"/>
+      <circle cx="620" cy="236" r="76.5" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.98"/>
+      <circle cx="620" cy="236" r="74" fill="#000000"/>
+      <path d="M 400 236 A 220 42 0 0 0 840 236 L 730 236 A 110 21 0 0 1 510 236 Z" transform="rotate(-14 620 236)" fill="url(#disk-grad)" opacity="0.95"/>
+      <path d="M 420 236 A 200 38 0 0 0 820 236" transform="rotate(-14 620 236)" stroke="#ffffff" stroke-width="2.2" fill="none" opacity="0.92"/>
+      <ellipse cx="530" cy="254" rx="45" ry="20" transform="rotate(-14 530 254)" fill="#ffffff" opacity="0.4"/>
+      <circle cx="620" cy="236" r="55" fill="#000000"/>
     </g>
 
     <!-- Layer 2: Far Horizon Mountain Ridge -->
