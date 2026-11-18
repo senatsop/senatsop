@@ -29,6 +29,14 @@
       <stop offset="32%" stop-color="#38BDF8" stop-opacity="0.24"/>
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="disk-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.15"/>
+      <stop offset="35%" stop-color="#0284C7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#0284C7" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#4F46E5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.1"/>
+    </linearGradient>
     <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="52%" stop-color="#0369A1"/>
@@ -287,10 +295,16 @@
       <rect class="comet-2" width="90" height="1.8" rx="1" fill="url(#comet-grad)"/>
     </g>
 
-    <!-- Luminous Horizon Eclipse Halo (creates strong silhouette depth separation) -->
+    <!-- Zoomed-In Blue Black Hole (Gargantua Singularity) -->
     <g class="eclipse-pulse">
-      <circle cx="620" cy="236" r="155" fill="url(#eclipse-glow)"/>
-      <circle cx="620" cy="236" r="54" fill="none" stroke="#0284C7" stroke-opacity="0.35" stroke-width="1.2"/>
+      <circle cx="620" cy="236" r="185" fill="url(#eclipse-glow)"/>
+      <ellipse cx="620" cy="236" rx="220" ry="42" transform="rotate(-14 620 236)" fill="url(#disk-grad)" opacity="0.88"/>
+      <path d="M 500 236 C 500 120 740 120 740 236" stroke="#ffffff" stroke-width="4.5" fill="none" opacity="0.92"/>
+      <path d="M 515 236 C 515 330 725 330 725 236" stroke="#0284C7" stroke-width="3" fill="none" opacity="0.75"/>
+      <circle cx="620" cy="236" r="74" fill="none" stroke="#0284C7" stroke-width="4" opacity="0.6"/>
+      <circle cx="620" cy="236" r="72" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.98"/>
+      <circle cx="620" cy="236" r="69" fill="#000000"/>
+      <circle cx="620" cy="236" r="32" fill="#000000"/>
     </g>
 
     <!-- Layer 2: Far Horizon Mountain Ridge -->
