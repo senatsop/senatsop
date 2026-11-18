@@ -9,9 +9,10 @@
 <br />
 
 <p>
+  <a href="https://senatsop.github.io"><img src="https://img.shields.io/badge/%E2%97%86-Scroll_Parallax_Site-0B1226?style=for-the-badge&labelColor=2DD4BF" alt="Scroll Parallax Site" /></a>
   <a href="https://github.com/senatsop"><img src="https://img.shields.io/badge/%E2%97%86-GitHub-0B1226?style=for-the-badge&labelColor=38BDF8" alt="GitHub" /></a>
   <a href="https://gokgokgok.com"><img src="https://img.shields.io/badge/%E2%97%86-Website-0B1226?style=for-the-badge&labelColor=6366F1" alt="Website" /></a>
-  <a href="https://github.com/senatsop?tab=repositories"><img src="https://img.shields.io/badge/%E2%97%86-Repositories-0B1226?style=for-the-badge&labelColor=14B8A6" alt="Repositories" /></a>
+  <a href="https://github.com/senatsop?tab=repositories"><img src="https://img.shields.io/badge/%E2%97%86-Repositories-0B1226?style=for-the-badge&labelColor=0F172A" alt="Repositories" /></a>
 </p>
 
 <br />
@@ -24,7 +25,11 @@
 
 <br />
 
-<h3>Featured Builds</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-builds-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-builds-light.svg" />
+  <img alt="Depth 02 — Featured Builds" src="./assets/div-builds-dark.svg" width="100%" />
+</picture>
 
 <p align="center">
   <a href="https://github.com/senatsop/sakay"><picture>
@@ -55,7 +60,11 @@
 
 <br />
 
-<h3>Tech Stack &amp; Arsenal</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-stack-light.svg" />
+  <img alt="Depth 03 — Tech Stack &amp; Arsenal" src="./assets/div-stack-dark.svg" width="100%" />
+</picture>
 
 <p>
   <img src="https://img.shields.io/badge/TypeScript-0B1226?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" />
@@ -73,7 +82,11 @@
 
 <br />
 
-<h3>Live Telemetry</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-telemetry-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-telemetry-light.svg" />
+  <img alt="Depth 04 — Live Telemetry" src="./assets/div-telemetry-dark.svg" width="100%" />
+</picture>
 
 <p>
   <img src="https://github-readme-stats.vercel.app/api?username=senatsop&show_icons=true&bg_color=060B18&title_color=38BDF8&icon_color=2DD4BF&text_color=CBD5E1&border_color=1E293B&border_radius=14" height="168" alt="GitHub Stats" />

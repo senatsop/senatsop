@@ -900,6 +900,90 @@ function renderFooterSvg(profile, mode) {
 </svg>`;
 }
 
+function renderDividerSvg(depthCode, title, seed, mode) {
+  const t = THEMES[mode];
+  const W = 1200;
+  const H = 82;
+  const rand = mulberry32(seed);
+  const slowDots = [];
+  const fastStreaks = [];
+  for (let i = 0; i < 24; i++) {
+    const x = Number((28 + rand() * (W - 56)).toFixed(1));
+    const y = Number((rand() * H).toFixed(1));
+    const r = Number((0.8 + rand() * 1.3).toFixed(2));
+    slowDots.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="${t.star}" opacity="0.45"/>`);
+    slowDots.push(`<circle cx="${x}" cy="${(y + H).toFixed(1)}" r="${r}" fill="${t.star}" opacity="0.45"/>`);
+  }
+  for (let i = 0; i < 12; i++) {
+    const x = Number((40 + rand() * (W - 80)).toFixed(1));
+    const y = Number((rand() * H).toFixed(1));
+    const len = Number((8 + rand() * 14).toFixed(1));
+    const stroke = i % 2 === 0 ? t.accent : t.accentMint;
+    fastStreaks.push(`<line x1="${x}" y1="${y}" x2="${x}" y2="${(y + len).toFixed(1)}" stroke="${stroke}" stroke-width="1.2" stroke-opacity="0.38" stroke-linecap="round"/>`);
+    fastStreaks.push(`<line x1="${x}" y1="${(y + H).toFixed(1)}" x2="${x}" y2="${(y + H + len).toFixed(1)}" stroke="${stroke}" stroke-width="1.2" stroke-opacity="0.38" stroke-linecap="round"/>`);
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${esc(depthCode)} — ${esc(title)}">
+  <title>${esc(title)}</title>
+  <defs>
+    <clipPath id="div-clip">
+      <rect width="${W}" height="${H}" rx="16"/>
+    </clipPath>
+    <linearGradient id="div-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.bgTop}"/>
+      <stop offset="50%" stop-color="${t.bgMid}"/>
+      <stop offset="100%" stop-color="${t.bgTop}"/>
+    </linearGradient>
+    <linearGradient id="div-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.accent}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="${t.accentMint}" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="${t.accentAlt}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .v-slow { animation: vflow 12s linear infinite; }
+    .v-fast { animation: vflow 5.5s linear infinite; }
+    .chev-1 { animation: chev-pulse 1.8s ease-in-out infinite; }
+    .chev-2 { animation: chev-pulse 1.8s ease-in-out 0.45s infinite; }
+
+    @keyframes vflow {
+      from { transform: translateY(-${H}px); }
+      to   { transform: translateY(0px); }
+    }
+    @keyframes chev-pulse {
+      0%, 100% { opacity: 0.25; }
+      50%      { opacity: 0.95; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#div-clip)">
+    <rect width="${W}" height="${H}" fill="url(#div-bg)"/>
+    <g class="v-slow">
+      ${slowDots.join('\n      ')}
+    </g>
+    <g class="v-fast">
+      ${fastStreaks.join('\n      ')}
+    </g>
+
+    <line x1="60" y1="${H / 2}" x2="${W - 60}" y2="${H / 2}" stroke="url(#div-line)" stroke-width="1"/>
+    <rect x="${W / 2 - 190}" y="17" width="380" height="48" rx="24" fill="${t.cardFill}" stroke="${t.cardStroke}" stroke-width="1.2"/>
+    <text x="${W / 2}" y="38" text-anchor="middle" fill="${t.accent}" font-family="${FONT_MONO}" font-size="10.5" font-weight="700" letter-spacing="1.4">${esc(depthCode)}</text>
+    <text x="${W / 2}" y="56" text-anchor="middle" fill="${t.textPrimary}" font-family="${FONT_SANS}" font-size="15" font-weight="700" letter-spacing="0.4">${esc(title)}</text>
+
+    <path class="chev-1" d="M52 34 L58 40 L64 34" fill="none" stroke="${t.accentMint}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="chev-2" d="M52 42 L58 48 L64 42" fill="none" stroke="${t.accent}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="chev-1" d="M${W - 64} 34 L${W - 58} 40 L${W - 52} 34" fill="none" stroke="${t.accentMint}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="chev-2" d="M${W - 64} 42 L${W - 58} 48 L${W - 52} 42" fill="none" stroke="${t.accent}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="15.5" fill="none" stroke="${t.border}" stroke-width="1.2"/>
+  </g>
+</svg>`;
+}
+
 function pictureBlock(name, alt, width = '100%') {
   return `<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/${name}-dark.svg" />
@@ -954,13 +1038,13 @@ ${pictureBlock('bento', 'Core Focus, Active Build, and Craft Matrix')}
 
 <br />
 
-<h3>Featured Builds</h3>
+${pictureBlock('div-builds', 'Depth 02 — Featured Builds')}
 
 ${projectPairs.join('\n')}
 
 <br />
 
-<h3>Tech Stack &amp; Arsenal</h3>
+${pictureBlock('div-stack', 'Depth 03 — Tech Stack & Arsenal')}
 
 <p>
   ${stackBadges}
@@ -968,7 +1052,7 @@ ${projectPairs.join('\n')}
 
 <br />
 
-<h3>Live Telemetry</h3>
+${pictureBlock('div-telemetry', 'Depth 04 — Live Telemetry')}
 
 <p>
   <img src="https://github-readme-stats.vercel.app/api?username=${encodeURIComponent(profile.handle)}&show_icons=true&bg_color=060B18&title_color=38BDF8&icon_color=2DD4BF&text_color=CBD5E1&border_color=1E293B&border_radius=14" height="168" alt="GitHub Stats" />
@@ -994,6 +1078,12 @@ function generate() {
     ['bento-light.svg', renderBentoSvg(profile, 'light')],
     ['footer-dark.svg', renderFooterSvg(profile, 'dark')],
     ['footer-light.svg', renderFooterSvg(profile, 'light')],
+    ['div-builds-dark.svg', renderDividerSvg('DEPTH // 02', 'FEATURED BUILDS', 101, 'dark')],
+    ['div-builds-light.svg', renderDividerSvg('DEPTH // 02', 'FEATURED BUILDS', 101, 'light')],
+    ['div-stack-dark.svg', renderDividerSvg('DEPTH // 03', 'TECH STACK & ARSENAL', 202, 'dark')],
+    ['div-stack-light.svg', renderDividerSvg('DEPTH // 03', 'TECH STACK & ARSENAL', 202, 'light')],
+    ['div-telemetry-dark.svg', renderDividerSvg('DEPTH // 04', 'LIVE TELEMETRY', 303, 'dark')],
+    ['div-telemetry-light.svg', renderDividerSvg('DEPTH // 04', 'LIVE TELEMETRY', 303, 'light')],
   ];
 
   (profile.projects || []).forEach((p, idx) => {
@@ -1025,7 +1115,7 @@ function selfCheck({ outputs, readme }) {
     assert.equal(openG, closeG, `${file}: unbalanced <g> tags (${openG} vs ${closeG})`);
   }
   const refs = [...readme.matchAll(/\.\/assets\/[a-z0-9-]+\.svg/gi)].map((m) => m[0]);
-  assert.ok(refs.length >= 14, 'README missing expected asset references');
+  assert.ok(refs.length >= 20, 'README missing expected asset references');
   for (const ref of refs) {
     assert.ok(existsSync(join(ROOT, ref)), `README references missing file: ${ref}`);
   }
