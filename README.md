@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
-  <img alt="senatsop — Vibecoder With 10% Skills" src="./assets/hero-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=10" />
+  <img alt="senatsop — Vibecoder With 10% Skills" src="./assets/hero-dark.svg?v=10" width="100%" />
 </picture>
 
 <br />
@@ -18,65 +18,65 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/bento-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/bento-light.svg" />
-  <img alt="Core Focus, Active Build, and Craft Matrix" src="./assets/bento-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/bento-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/bento-light.svg?v=10" />
+  <img alt="Core Focus, Active Build, and Craft Matrix" src="./assets/bento-dark.svg?v=10" width="100%" />
 </picture>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-builds-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/div-builds-light.svg" />
-  <img alt="Depth 02 — Featured Builds" src="./assets/div-builds-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-builds-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-builds-light.svg?v=10" />
+  <img alt="Depth 02 — Featured Builds" src="./assets/div-builds-dark.svg?v=10" width="100%" />
 </picture>
 
 <p align="center">
   <a href="https://github.com/senatsop/sakay"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-1-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-1-light.svg" />
-  <img alt="sakay — Bohol Province-wide intelligent public transportation info and journey planning platform." src="./assets/proj-1-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-1-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-1-light.svg?v=10" />
+  <img alt="sakay — Bohol Province-wide intelligent public transportation info and journey planning platform." src="./assets/proj-1-dark.svg?v=10" width="48.8%" />
 </picture></a>
   &nbsp;
   <a href="https://github.com/senatsop/loadwise"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-2-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-2-light.svg" />
-  <img alt="loadwise — Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio." src="./assets/proj-2-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-2-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-2-light.svg?v=10" />
+  <img alt="loadwise — Student academic load manager, constraint-based scheduler, OCR reader, and timetable studio." src="./assets/proj-2-dark.svg?v=10" width="48.8%" />
 </picture></a>
 </p>
 <p align="center">
   <a href="https://github.com/senatsop/CANVAS-LMS-BYPASS"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-3-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-3-light.svg" />
-  <img alt="canvas lms injector — Simulates constant visibility and window focus to test LMS proctoring and detection barriers." src="./assets/proj-3-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-3-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-3-light.svg?v=10" />
+  <img alt="canvas lms injector — Simulates constant visibility and window focus to test LMS proctoring and detection barriers." src="./assets/proj-3-dark.svg?v=10" width="48.8%" />
 </picture></a>
   &nbsp;
   <a href="https://github.com/senatsop/antigravity-discord-controller"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-4-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-4-light.svg" />
-  <img alt="antigravity-discord-controller — Antigravity IDE × Discord remote control and live notification system." src="./assets/proj-4-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-4-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-4-light.svg?v=10" />
+  <img alt="antigravity-discord-controller — Antigravity IDE × Discord remote control and live notification system." src="./assets/proj-4-dark.svg?v=10" width="48.8%" />
 </picture></a>
 </p>
 <p align="center">
   <a href="https://github.com/senatsop/IM-Project"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-5-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-5-light.svg" />
-  <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-5-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-5-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-5-light.svg?v=10" />
+  <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-5-dark.svg?v=10" width="48.8%" />
 </picture></a>
   &nbsp;
   <a href="https://github.com/senatsop/clash-royale"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-6-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-6-light.svg" />
-  <img alt="clash-royale — Clash Royale inspired interactive browser combat project." src="./assets/proj-6-dark.svg" width="48.8%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-6-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-6-light.svg?v=10" />
+  <img alt="clash-royale — Clash Royale inspired interactive browser combat project." src="./assets/proj-6-dark.svg?v=10" width="48.8%" />
 </picture></a>
 </p>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-stack-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/div-stack-light.svg" />
-  <img alt="Depth 03 — Tech Stack &amp; Arsenal" src="./assets/div-stack-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-stack-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-stack-light.svg?v=10" />
+  <img alt="Depth 03 — Tech Stack &amp; Arsenal" src="./assets/div-stack-dark.svg?v=10" width="100%" />
 </picture>
 
 <p>
@@ -98,23 +98,23 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-tried-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/div-tried-light.svg" />
-  <img alt="Depth 04 — Tried Languages During Vibecoding" src="./assets/div-tried-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-tried-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-tried-light.svg?v=10" />
+  <img alt="Depth 04 — Tried Languages During Vibecoding" src="./assets/div-tried-dark.svg?v=10" width="100%" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/tried-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/tried-light.svg" />
-  <img alt="Languages Attempted While Vibecoding With 10% Skills" src="./assets/tried-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/tried-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tried-light.svg?v=10" />
+  <img alt="Languages Attempted While Vibecoding With 10% Skills" src="./assets/tried-dark.svg?v=10" width="100%" />
 </picture>
 
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-telemetry-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/div-telemetry-light.svg" />
-  <img alt="Depth 05 — Live Telemetry" src="./assets/div-telemetry-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/div-telemetry-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/div-telemetry-light.svg?v=10" />
+  <img alt="Depth 05 — Live Telemetry" src="./assets/div-telemetry-dark.svg?v=10" width="100%" />
 </picture>
 
 <p>
@@ -125,9 +125,9 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
-  <img alt="lowkey, I like her :(  ·  vibecoder with 10% skills" src="./assets/footer-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg?v=10" />
+  <img alt="lowkey, I like her :(  ·  vibecoder with 10% skills" src="./assets/footer-dark.svg?v=10" width="100%" />
 </picture>
 
 </div>

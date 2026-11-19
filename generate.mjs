@@ -1096,9 +1096,9 @@ function renderDividerSvg(depthCode, title, seed, mode) {
 
 function pictureBlock(name, alt, width = '100%') {
   return `<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/${name}-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/${name}-light.svg" />
-  <img alt="${esc(alt)}" src="./assets/${name}-dark.svg" width="${width}" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/${name}-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/${name}-light.svg?v=10" />
+  <img alt="${esc(alt)}" src="./assets/${name}-dark.svg?v=10" width="${width}" />
 </picture>`;
 }
 
