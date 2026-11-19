@@ -100,6 +100,7 @@ const FONT_MONO = `'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, 
 const STACK_LOGOS = {
   JavaScript: { logo: 'javascript', color: 'F7DF1E' },
   HTML5: { logo: 'html5', color: 'E34F26' },
+  'Vibecoder with 10% skills': { logo: 'googlegemini', color: '2DD4BF' },
   'Vibecoder with no skills': { logo: 'googlegemini', color: '2DD4BF' },
   Claude: { logo: 'claude', color: 'D97706' },
   Codex: { logo: 'githubcopilot', color: '38BDF8' },
@@ -1163,7 +1164,7 @@ ${pictureBlock('div-stack', 'Depth 03 — Tech Stack & Arsenal')}
 
 ${pictureBlock('div-tried', 'Depth 04 — Tried Languages During Vibecoding')}
 
-${pictureBlock('tried', 'Languages Attempted While Vibecoding With No Skills')}
+${pictureBlock('tried', 'Languages Attempted While Vibecoding With 10% Skills')}
 
 <br />
 

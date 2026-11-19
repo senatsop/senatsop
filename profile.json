@@ -1,9 +1,9 @@
 {
   "name": "senatsop",
   "handle": "senatsop",
-  "role": "Vibecoder With No Skills",
-  "tagline": "Vibecoder with no skills — turning prompts, chaos, and late-night ideas into shipped apps & bots.",
-  "status": "VIBECODING · NO SKILLS",
+  "role": "Vibecoder With 10% Skills",
+  "tagline": "Vibecoder with 10% skills — turning prompts, chaos, and late-night ideas into shipped apps & bots.",
+  "status": "VIBECODING · 10% SKILLS",
   "location": "he/him · 203+ contributions",
   "inProgress": [
     {
@@ -29,20 +29,45 @@
     }
   ],
   "focus": [
-    "Pure Vibecoding With No Skills",
+    "Pure Vibecoding With 10% Skills",
     "Claude & Codex AI Pairing",
     "Smart Web & Transit Platforms"
   ],
   "highlights": [
-    { "label": "VIBECODING", "level": 100 },
-    { "label": "SHIPPING ANYWAY", "level": 96 },
-    { "label": "ACTUAL SKILLS", "level": 0 }
+    {
+      "label": "VIBECODING",
+      "level": 100
+    },
+    {
+      "label": "SHIPPING ANYWAY",
+      "level": 96
+    },
+    {
+      "label": "ACTUAL SKILLS",
+      "level": 10
+    }
   ],
   "links": [
-    { "label": "Scroll Parallax Site", "url": "https://senatsop.github.io", "color": "2DD4BF" },
-    { "label": "GitHub", "url": "https://github.com/senatsop", "color": "38BDF8" },
-    { "label": "Website", "url": "https://gokgokgok.com", "color": "6366F1" },
-    { "label": "Repositories", "url": "https://github.com/senatsop?tab=repositories", "color": "0F172A" }
+    {
+      "label": "Scroll Parallax Site",
+      "url": "https://senatsop.github.io",
+      "color": "2DD4BF"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/senatsop",
+      "color": "38BDF8"
+    },
+    {
+      "label": "Website",
+      "url": "https://gokgokgok.com",
+      "color": "6366F1"
+    },
+    {
+      "label": "Repositories",
+      "url": "https://github.com/senatsop?tab=repositories",
+      "color": "0F172A"
+    }
   ],
   "projects": [
     {
@@ -89,17 +114,87 @@
     }
   ],
   "techStack": {
-    "Languages": ["TypeScript", "JavaScript", "HTML5", "CSS3"],
-    "AI & Tooling": ["Claude", "Codex", "Antigravity IDE", "Git", "GitHub"],
-    "Focus": ["Vibecoder with no skills", "Web Apps", "Discord Bots", "SVG Motion"]
+    "Languages": [
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3"
+    ],
+    "AI & Tooling": [
+      "Claude",
+      "Codex",
+      "Antigravity IDE",
+      "Git",
+      "GitHub"
+    ],
+    "Focus": [
+      "Vibecoder with 10% skills",
+      "Web Apps",
+      "Discord Bots",
+      "SVG Motion"
+    ]
   },
   "triedLanguages": [
-    { "name": "JavaScript", "footprint": "2.85 MB · 10 Repos", "bytes": 2852673, "pct": "72.3%", "survival": 96, "outcome": "VIBE CAPITAL", "vibecoderLog": "2.85 MB across 10 repos. Async event loop chaos & DOM hooks.", "color": "FACC15" },
-    { "name": "TypeScript", "footprint": "243 KB · 3 Repos", "bytes": 243129, "pct": "6.2%", "survival": 88, "outcome": "ANY BYPASS", "vibecoderLog": "243 KB across sakay & loadwise. Strict types beaten with 'as any'.", "color": "38BDF8" },
-    { "name": "PLpgSQL", "footprint": "135 KB · 3 Repos", "bytes": 135265, "pct": "3.4%", "survival": 72, "outcome": "TRIGGER MAZE", "vibecoderLog": "135 KB in campus-facility & IM-Project. Multi-table relational joins.", "color": "60A5FA" },
-    { "name": "PowerShell", "footprint": "36.8 KB · 2 Repos", "bytes": 36771, "pct": "0.9%", "survival": 64, "outcome": "EXEC BYPASS", "vibecoderLog": "36.8 KB daemon orchestration & Windows CLI automation scripts.", "color": "818CF8" },
-    { "name": "Rust", "footprint": "33.7 KB · 1 Repo", "bytes": 33691, "pct": "0.8%", "survival": 52, "outcome": "BORROW SURVIVED", "vibecoderLog": "33.7 KB constraint engine in loadwise. Borrow checker survived.", "color": "FB923C" },
-    { "name": "Python", "footprint": "6.1 KB · 2 Repos", "bytes": 6068, "pct": "0.2%", "survival": 42, "outcome": "INDENT VIBES", "vibecoderLog": "6.1 KB Discord bot hooks & GIS route solvers. Virtualenv survived.", "color": "2DD4BF" }
+    {
+      "name": "JavaScript",
+      "footprint": "2.85 MB · 10 Repos",
+      "bytes": 2852673,
+      "pct": "72.3%",
+      "survival": 96,
+      "outcome": "VIBE CAPITAL",
+      "vibecoderLog": "2.85 MB across 10 repos. Async event loop chaos & DOM hooks.",
+      "color": "FACC15"
+    },
+    {
+      "name": "TypeScript",
+      "footprint": "243 KB · 3 Repos",
+      "bytes": 243129,
+      "pct": "6.2%",
+      "survival": 88,
+      "outcome": "ANY BYPASS",
+      "vibecoderLog": "243 KB across sakay & loadwise. Strict types beaten with 'as any'.",
+      "color": "38BDF8"
+    },
+    {
+      "name": "PLpgSQL",
+      "footprint": "135 KB · 3 Repos",
+      "bytes": 135265,
+      "pct": "3.4%",
+      "survival": 72,
+      "outcome": "TRIGGER MAZE",
+      "vibecoderLog": "135 KB in campus-facility & IM-Project. Multi-table relational joins.",
+      "color": "60A5FA"
+    },
+    {
+      "name": "PowerShell",
+      "footprint": "36.8 KB · 2 Repos",
+      "bytes": 36771,
+      "pct": "0.9%",
+      "survival": 64,
+      "outcome": "EXEC BYPASS",
+      "vibecoderLog": "36.8 KB daemon orchestration & Windows CLI automation scripts.",
+      "color": "818CF8"
+    },
+    {
+      "name": "Rust",
+      "footprint": "33.7 KB · 1 Repo",
+      "bytes": 33691,
+      "pct": "0.8%",
+      "survival": 52,
+      "outcome": "BORROW SURVIVED",
+      "vibecoderLog": "33.7 KB constraint engine in loadwise. Borrow checker survived.",
+      "color": "FB923C"
+    },
+    {
+      "name": "Python",
+      "footprint": "6.1 KB · 2 Repos",
+      "bytes": 6068,
+      "pct": "0.2%",
+      "survival": 42,
+      "outcome": "INDENT VIBES",
+      "vibecoderLog": "6.1 KB Discord bot hooks & GIS route solvers. Virtualenv survived.",
+      "color": "2DD4BF"
+    }
   ],
-  "footerNote": "lowkey, I like her :(  ·  vibecoder with no skills"
+  "footerNote": "lowkey, I like her :(  ·  vibecoder with 10% skills"
 }

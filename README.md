@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
-  <img alt="senatsop — Vibecoder With No Skills" src="./assets/hero-dark.svg" width="100%" />
+  <img alt="senatsop — Vibecoder With 10% Skills" src="./assets/hero-dark.svg" width="100%" />
 </picture>
 
 <br />
@@ -89,7 +89,7 @@
   <img src="https://img.shields.io/badge/Antigravity_IDE-0B1226?style=for-the-badge&logo=googlegemini&logoColor=38BDF8" alt="Antigravity IDE" />
   <img src="https://img.shields.io/badge/Git-0B1226?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-0B1226?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Vibecoder_with_no_skills-0B1226?style=for-the-badge&logo=googlegemini&logoColor=2DD4BF" alt="Vibecoder with no skills" />
+  <img src="https://img.shields.io/badge/Vibecoder_with_10%25_skills-0B1226?style=for-the-badge&logo=googlegemini&logoColor=2DD4BF" alt="Vibecoder with 10% skills" />
   <img src="https://img.shields.io/badge/Web_Apps-0B1226?style=for-the-badge&logo=googlechrome&logoColor=38BDF8" alt="Web Apps" />
   <img src="https://img.shields.io/badge/Discord_Bots-0B1226?style=for-the-badge&logo=discord&logoColor=5865F2" alt="Discord Bots" />
   <img src="https://img.shields.io/badge/SVG_Motion-0B1226?style=for-the-badge&logo=svg&logoColor=818CF8" alt="SVG Motion" />
@@ -106,7 +106,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/tried-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/tried-light.svg" />
-  <img alt="Languages Attempted While Vibecoding With No Skills" src="./assets/tried-dark.svg" width="100%" />
+  <img alt="Languages Attempted While Vibecoding With 10% Skills" src="./assets/tried-dark.svg" width="100%" />
 </picture>
 
 <br />
@@ -127,7 +127,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
-  <img alt="lowkey, I like her :(  ·  vibecoder with no skills" src="./assets/footer-dark.svg" width="100%" />
+  <img alt="lowkey, I like her :(  ·  vibecoder with 10% skills" src="./assets/footer-dark.svg" width="100%" />
 </picture>
 
 </div>
