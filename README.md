@@ -64,10 +64,17 @@
   <img alt="IM-Project — Campus Lost And Found web application for reporting and recovering lost items." src="./assets/proj-5-dark.svg?v=10" width="48.8%" />
 </picture></a>
   &nbsp;
-  <a href="https://github.com/senatsop/clash-royale"><picture>
+  <a href="https://github.com/senatsop/antigravity-x-discord-x-gemini"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-6-dark.svg?v=10" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/proj-6-light.svg?v=10" />
-  <img alt="clash-royale — Clash Royale inspired interactive browser combat project." src="./assets/proj-6-dark.svg?v=10" width="48.8%" />
+  <img alt="Antigravity x Discord x Gemini — Autonomous development bridge connecting Google Antigravity, Discord, and Google Gemini." src="./assets/proj-6-dark.svg?v=10" width="48.8%" />
+</picture></a>
+</p>
+<p align="center">
+  <a href="https://github.com/senatsop/clash-royale"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/proj-7-dark.svg?v=10" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/proj-7-light.svg?v=10" />
+  <img alt="clash-royale — Clash Royale inspired interactive browser combat project." src="./assets/proj-7-dark.svg?v=10" width="48.8%" />
 </picture></a>
 </p>
 

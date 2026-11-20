@@ -101,9 +101,16 @@
     {
       "name": "IM-Project",
       "repo": "senatsop/IM-Project",
-      "badge": "PUBLIC",
+      "badge": "CAMPUS APP",
       "description": "Campus Lost And Found web application for reporting and recovering lost items.",
-      "stack": "JavaScript · Web App"
+      "stack": "JavaScript · PLpgSQL · Web App"
+    },
+    {
+      "name": "Antigravity x Discord x Gemini",
+      "repo": "senatsop/antigravity-x-discord-x-gemini",
+      "badge": "GEMINI AI",
+      "description": "Autonomous development bridge connecting Google Antigravity, Discord, and Google Gemini.",
+      "stack": "JavaScript · Gemini API · Discord"
     },
     {
       "name": "clash-royale",
